@@ -18,7 +18,7 @@ Route::get('/redirect', function () {
     }
 
     if ($user->hasRole('manager')) {
-        return redirect()->route('espaceManager');
+        return redirect()->route('superAdmin');
     }
 
     if ($user->hasRole('client')) {
@@ -32,16 +32,10 @@ Route::get('/redirect', function () {
 // routes listes
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
-    Route::middleware(['role:superadmin'])->prefix('fulladmin')->group(function () {
+    Route::middleware(['role:superadmin|manager'])->prefix('fulladmin')->group(function () {
 
         Route::get('/', HomeSuperAdmin::class)->name('superAdmin');
 
-    });
-
-    Route::middleware(['role:manager'])->prefix('espace-manager')->group(function () {
-        Route::get('/manager', function () {
-            return view('manager');
-        })->name('espaceManager');
     });
 
     Route::middleware(['role:client'])->prefix('client-espace')->group(function () {

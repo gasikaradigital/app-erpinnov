@@ -17,7 +17,7 @@ class RedirectIfAuthenticatedByRole
         }
 
         if ($user->hasRole('manager')) {
-            return redirect()->route('espaceManager');
+            return redirect()->route('superAdmin');
         }
 
         if ($user->hasRole('client')) {
