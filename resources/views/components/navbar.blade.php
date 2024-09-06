@@ -297,7 +297,7 @@
 
                 <!-- navbar button: Start -->
                 <li>
-                    <a href="/register" class="btn btn-primary"><span class="tf-icons ti ti-login scaleX-n1-rtl me-md-1"></span><span
+                    <a href="/login" class="btn btn-primary"><span class="tf-icons ti ti-login scaleX-n1-rtl me-md-1"></span><span
                             class="d-none d-md-block">Login/Register</span></a>
                 </li>
                 <!-- navbar button: End -->
