@@ -6,17 +6,16 @@
                 <div class="container">
                     <div class="text-center hero-text-box">
                         <h1 class="text-primary hero-title display-6 fw-bold">
-                            One dashboard to manage all your
-                            businesses</h1>
+                            Suite CRM et ERP Cloud 100% libre</h1>
                         <h2 class="pb-1 mb-4 hero-sub-title h6">
-                            Production-ready & easy to use Admin Template<br class="d-none d-lg-block" />
-                            for Reliability and Customizability.
+                            Gérer votre entreprise, du marketing <br class="d-none d-lg-block" />
+                            à la comptabilité.
                         </h2>
                         <div class="landing-hero-btn d-inline-block position-relative">
-                            <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">Join community
+                            <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">Rejoignez la communauté
                                 <img src="assets/img/front-pages/icons/Join-community-arrow.png" alt="Join community arrow"
                                     class="scaleX-n1-rtl" /></span>
-                            <a href="#landingPricing" class="btn btn-primary btn-lg">Get early access</a>
+                            <a href="/login" class="btn btn-primary btn-lg">Je tester gratuitement</a>
                         </div>
                     </div>
                     <div id="heroDashboardAnimation" class="hero-animation-img">
@@ -43,65 +42,65 @@
         <section id="landingFeatures" class="section-py landing-features">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Useful Features</span>
+                    <span class="badge bg-label-primary">Caractéristiques utiles</span>
                 </div>
                 <h3 class="mb-1 text-center">
-                    <span class="section-title">Everything you need</span> to start your next project
+                    <span class="section-title">Tout ce dont vous avez besoin</span> pour démarrer votre prochain projet
                 </h3>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-                    Not just a set of tools, the package includes ready-to-deploy conceptual application.
+                    Il ne s’agit pas d’un simple ensemble d’outils, mais d’une application conceptuelle prête à être déployée.
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/laptop.png" alt="laptop charging" />
                         </div>
-                        <h5 class="mb-3">Quality Code</h5>
+                        <h4><a href="#">CRM & Ventes</a></h4>
                         <p class="features-icon-description">
-                            Code structure that all developers will easily understand and fall in love with.
+                            Structure du code que tous les développeurs comprendront facilement et dont ils tomberont amoureux.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/rocket.png" alt="transition up" />
                         </div>
-                        <h5 class="mb-3">Continuous Updates</h5>
+                        <h4><a href="#">Marketing</a></h4>
                         <p class="features-icon-description">
-                            Free updates for the next 12 months, including new demos and features.
+                            Mises à jour gratuites pour les 12 prochains mois, y compris de nouvelles démos et fonctionnalités.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/paper.png" alt="edit" />
                         </div>
-                        <h5 class="mb-3">Stater-Kit</h5>
+                        <h4><a href="#">Finance & Facturation</a></h4>
                         <p class="features-icon-description">
-                            Start your project quickly without having to remove unnecessary features.
+                            Démarrez votre projet rapidement sans avoir à supprimer les fonctionnalités inutiles.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/check.png" alt="3d select solid" />
                         </div>
-                        <h5 class="mb-3">API Ready</h5>
+                        <h4><a href="#">Produit & Stock</a></h4>
                         <p class="features-icon-description">
-                            Just change the endpoint and see your own data loaded within seconds.
+                            Il vous suffit de changer le point de terminaison et de voir vos propres données chargées en quelques secondes.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/user.png" alt="lifebelt" />
                         </div>
-                        <h5 class="mb-3">Excellent Support</h5>
-                        <p class="features-icon-description">An easy-to-follow doc with lots of references and code
+                        <h4><a href="#">Ressources Humaines</a></h4>
+                        <p class="features-icon-description">Un document facile à suivre avec de nombreuses références et du code
                             examples.</p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/keyboard.png" alt="google docs" />
                         </div>
-                        <h5 class="mb-3">Well Documented</h5>
-                        <p class="features-icon-description">An easy-to-follow doc with lots of references and code
+                        <h4><a href="#">Productivité</a></h4>
+                        <p class="features-icon-description">Un document facile à suivre avec de nombreuses références et du code
                             examples.</p>
                     </div>
                 </div>
@@ -116,12 +115,12 @@
                 <div class="row align-items-center gx-0 gy-4 g-lg-5">
                     <div class="col-md-6 col-lg-5 col-xl-3">
                         <div class="pb-1 mb-3">
-                            <span class="badge bg-label-primary">Real Customers Reviews</span>
+                            <span class="badge bg-label-primary">Real Avis des clients</span>
                         </div>
-                        <h3 class="mb-1"><span class="section-title">What people say</span></h3>
+                        <h3 class="mb-1"><span class="section-title">Ce que les gens disent</span></h3>
                         <p class="mb-3 mb-md-5">
-                            See what our customers have to<br class="d-none d-xl-block" />
-                            say about their experience.
+                            Voyez ce que nos clients ont à faire<br class="d-none d-xl-block" />
+                            de leur expérience.
                         </p>
                         <div class="landing-reviews-btns">
                             <button id="reviews-previous-btn" class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
@@ -147,9 +146,9 @@
                                                         class="client-logo img-fluid" />
                                                 </div>
                                                 <p>
-                                                    “Vuexy is hands down the most useful front end Bootstrap theme I've
-                                                    ever used. I can't wait
-                                                    to use it again for my next project.”
+                                                    "Vuexy est sans conteste le thème Bootstrap front-end le plus utile que j’ai
+                                                    jamais utilisé. J’ai hâte
+                                                    pour l’utiliser à nouveau pour mon prochain projet.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -165,7 +164,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Cecilia Payne</h6>
-                                                        <p class="mb-0 small text-muted">CEO of Airbnb</p>
+                                                        <p class="mb-0 small text-muted">PDG d’Airbnb</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -180,9 +179,9 @@
                                                         class="client-logo img-fluid" />
                                                 </div>
                                                 <p>
-                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
-                                                    go to for building
-                                                    dashboard sites on almost any project.”
+                                                    « Je n’ai jamais utilisé un thème aussi polyvalent et flexible que Vuexy. C’est mon
+                                                    Aller à Pour la construction
+                                                    des sites de tableau de bord sur presque tous les projets.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -198,7 +197,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="mb-0 small text-muted">Founder of Hubspot</p>
+                                                        <p class="mb-0 small text-muted">Fondateur de Hubspot</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,9 +212,9 @@
                                                         class="client-logo img-fluid" />
                                                 </div>
                                                 <p>
-                                                    This template is really clean & well documented. The docs are really
-                                                    easy to understand and
-                                                    it's always easy to find a screenshot from their website.
+                                                    Ce modèle est vraiment propre et bien documenté. Les docs sont vraiment
+                                                    facile à comprendre et
+                                                    Il est toujours facile de trouver une capture d’écran sur leur site Web.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -231,7 +230,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Curtis Fletcher</h6>
-                                                        <p class="mb-0 small text-muted">Design Lead at Dribbble</p>
+                                                        <p class="mb-0 small text-muted">Design Lead chez Dribbble</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -246,9 +245,9 @@
                                                         class="client-logo img-fluid" />
                                                 </div>
                                                 <p>
-                                                    All the requirements for developers have been taken into
-                                                    consideration, so I’m able to build
-                                                    any interface I want.
+                                                    Toutes les exigences pour les développeurs ont été prises en compte
+                                                    considération, donc je suis capable de construire
+                                                    n’importe quelle interface que je veux.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -264,7 +263,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="mb-0 small text-muted">Founder of Continental</p>
+                                                        <p class="mb-0 small text-muted">Fondateur de Continental</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -279,9 +278,9 @@
                                                         class="client-logo img-fluid" />
                                                 </div>
                                                 <p>
-                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
-                                                    go to for building
-                                                    dashboard sites on almost any project.”
+                                                    « Je n’ai jamais utilisé un thème aussi polyvalent et flexible que Vuexy. C’est mon
+                                                    Aller à Pour la construction
+                                                    des sites de tableau de bord sur presque tous les projets.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -297,7 +296,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="mb-0 small text-muted">Founder of Hubspot</p>
+                                                        <p class="mb-0 small text-muted">Fondateur de Hubspot</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -313,8 +312,8 @@
                                                 </div>
                                                 <p>
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo
-                                                    mollitia, ad eum
-                                                    officia numquam nostrum repellendus consequuntur!
+                                                    Mollitia, ad eum
+                                                    Officia numquam nostrum repellendus consequuntur !
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -330,7 +329,7 @@
                                                     </div>
                                                     <div>
                                                         <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="mb-0 small text-muted">Founder of Continental</p>
+                                                        <p class="mb-0 small text-muted">Fondateur de Continental</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -388,10 +387,10 @@
         <section id="landingTeam" class="section-py landing-team">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Our Great Team</span>
+                    <span class="badge bg-label-primary">Notre grande équipe</span>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Supported</span> by Real People</h3>
-                <p class="pb-3 text-center mb-md-5">Who is behind these great-looking interfaces?</p>
+                <h3 class="mb-1 text-center"><span class="section-title">Supporté</span> par Real People</h3>
+                <p class="pb-3 text-center mb-md-5">Qui se cache derrière ces interfaces ravissantes ?</p>
                 <div class="mt-2 row gy-5">
                     <div class="col-lg-3 col-sm-6">
                         <div class="mt-3 shadow-none card mt-lg-0">
@@ -402,7 +401,7 @@
                             </div>
                             <div class="text-center border card-body border-top-0 border-label-primary">
                                 <h5 class="mb-0 card-title">Sophie Gilbert</h5>
-                                <p class="mb-0 text-muted">Project Manager</p>
+                                <p class="mb-0 text-muted">Chef de projet</p>
                             </div>
                         </div>
                     </div>
@@ -428,7 +427,7 @@
                             </div>
                             <div class="text-center border card-body border-top-0 border-label-danger">
                                 <h5 class="mb-0 card-title">Nannie Ford</h5>
-                                <p class="mb-0 text-muted">Development Lead</p>
+                                <p class="mb-0 text-muted">Responsable du développement</p>
                             </div>
                         </div>
                     </div>
@@ -441,7 +440,7 @@
                             </div>
                             <div class="text-center border card-body border-top-0 border-label-success">
                                 <h5 class="mb-0 card-title">Chris Watkins</h5>
-                                <p class="mb-0 text-muted">Marketing Manager</p>
+                                <p class="mb-0 text-muted">Responsable Marketing</p>
                             </div>
                         </div>
                     </div>
@@ -454,25 +453,25 @@
         <section id="landingPricing" class="section-py bg-body landing-pricing">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Pricing Plans</span>
+                    <span class="badge bg-label-primary">Plans tarifaires</span>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Tailored pricing plans</span> designed for you
+                <h3 class="mb-1 text-center"><span class="section-title">Des plans tarifaires sur mesure</span> conçus pour vous
                 </h3>
                 <p class="pb-3 mb-4 text-center">
-                    All plans include 40+ advanced tools and features to boost your product.<br />Choose the best plan
-                    to fit
-                    your needs.
+                    Tous les plans incluent 40+ outils et fonctionnalités avancés pour booster votre produit.<br />Choisissez le meilleur plan
+                    pour s’adapter
+                    vos besoins.
                 </p>
                 <div class="mb-5 text-center">
                     <div class="pt-3 position-relative d-inline-block pt-md-0">
                         <label class="switch switch-primary me-0">
-                            <span class="switch-label">Pay Monthly</span>
+                            <span class="switch-label">Paiement mensuel</span>
                             <input type="checkbox" class="switch-input price-duration-toggler" checked />
                             <span class="switch-toggle-slider">
                                 <span class="switch-on"></span>
                                 <span class="switch-off"></span>
                             </span>
-                            <span class="switch-label">Pay Annual</span>
+                            <span class="switch-label">Payer annuellement</span>
                         </label>
                         <div class="pricing-plans-item position-absolute d-flex">
                             <img src="assets/img/front-pages/icons/pricing-plans-arrow.png" alt="pricing plans arrow"
@@ -496,7 +495,7 @@
                                         <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 168 / year
+                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 168 / ans
                                         </div>
                                     </div>
                                 </div>
@@ -507,21 +506,21 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Timeline
+                                                    Chronologie
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Basic search
+                                                    Recherche de base
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Live chat widget
+                                            LWidget de chat ive
                                         </h5>
                                     </li>
                                     <li>
@@ -535,26 +534,26 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Custom Forms
+                                                    Formulaires personnalisés
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Traffic analytics
+                                                    Analyse du trafic
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Basic Support
+                                                    Assistance de base
                                         </h5>
                                     </li>
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
+                                    <a href="payment-page.html" class="btn btn-label-primary">Démarrer</a>
                                 </div>
                             </div>
                         </div>
@@ -574,7 +573,7 @@
                                         <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 264 / year
+                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 264 / ans
                                         </div>
                                     </div>
                                 </div>
@@ -585,49 +584,49 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Everything in basic
+                                                    Tout en basic
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Timeline with database
+                                                    Chronologie avec base de données
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Advanced search
+                                                    Recherche avancée
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Marketing automation
+                                                    Automatisation du marketing
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Advanced chatbot
+                                                    Chatbot avancé
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Campaign management
+                                                    Gestion de campagnes
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Collaboration tools
+                                                    Outils de collaboration
                                         </h5>
                                     </li>
                                 </ul>
@@ -653,7 +652,7 @@
                                         <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 444 / year
+                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 444 / ans
                                         </div>
                                     </div>
                                 </div>
@@ -664,54 +663,54 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Everything in premium
+                                                    Tout en premium
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Timeline with database
+                                                    Chronologie avec base de données
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Fuzzy search
+                                                    Recherche floue
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            A/B testing sanbox
+                                            A/B Test de Sanbox
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Custom permissions
+                                                    Autorisations personnalisées
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Social media automation
+                                                    Automatisation des médias sociaux
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            Sales automation tools
+                                                    Outils d’automatisation des ventes
                                         </h5>
                                     </li>
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
+                                    <a href="payment-page.html" class="btn btn-label-primary">Démarrer</a>
                                 </div>
                             </div>
                         </div>
@@ -732,8 +731,8 @@
                                 <img src="assets/img/front-pages/icons/laptop.png" alt="laptop" class="mb-2" />
                                 <h5 class="mb-1 h2">7.1k+</h5>
                                 <p class="mb-0 fw-medium">
-                                    Support Tickets<br />
-                                    Resolved
+                                    Tickets d’assistance<br />
+                                    Résolu
                                 </p>
                             </div>
                         </div>
@@ -744,8 +743,8 @@
                                 <img src="assets/img/front-pages/icons/user-success.png" alt="laptop" class="mb-2" />
                                 <h5 class="mb-1 h2">50k+</h5>
                                 <p class="mb-0 fw-medium">
-                                    Join creatives<br />
-                                    community
+                                    Rejoindre creatives<br />
+                                    communauté
                                 </p>
                             </div>
                         </div>
@@ -756,8 +755,8 @@
                                 <img src="assets/img/front-pages/icons/diamond-info.png" alt="laptop" class="mb-2" />
                                 <h5 class="mb-1 h2">4.8/5</h5>
                                 <p class="mb-0 fw-medium">
-                                    Highly Rated<br />
-                                    Products
+                                    Très bien noté<br />
+                                    Produits
                                 </p>
                             </div>
                         </div>
@@ -768,8 +767,8 @@
                                 <img src="assets/img/front-pages/icons/check-warning.png" alt="laptop" class="mb-2" />
                                 <h5 class="mb-1 h2">100%</h5>
                                 <p class="mb-0 fw-medium">
-                                    Money Back<br />
-                                    Guarantee
+                                    Remboursement <br />
+                                    Garantie
                                 </p>
                             </div>
                         </div>
@@ -785,8 +784,8 @@
                 <div class="pb-1 mb-3 text-center">
                     <span class="badge bg-label-primary">FAQ</span>
                 </div>
-                <h3 class="mb-1 text-center">Frequently asked <span class="section-title">questions</span></h3>
-                <p class="pb-3 mb-5 text-center">Browse through these FAQs to find answers to commonly asked questions.
+                <h3 class="mb-1 text-center">Foire aux questions <span class="section-title">questions</span></h3>
+                <p class="pb-3 mb-5 text-center">Parcourez ces FAQ pour trouver les réponses aux questions les plus fréquemment posées.
                 </p>
                 <div class="row gy-5">
                     <div class="col-lg-5">
@@ -801,18 +800,18 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button type="button" class="accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
-                                        Do you charge for each upgrade?
+                                        Facturez-vous chaque mise à niveau ?
                                     </button>
                                 </h2>
 
                                 <div id="accordionOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping.
-                                        Sesame snaps icing
-                                        marzipan gummi bears macaroon dragée danish caramels powder. Bear claw dragée
-                                        pastry topping
-                                        soufflé. Wafer gummi bears marshmallow pastry pie.
+                                        Gouttes de citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes, chupa chups, garniture de muffins.
+                                        Glaçage au sésame
+                                        Pâte d’amande, oursons gélifiés, macaron, dragée, caramels danois, poudre. Griffe d’ours dragée
+                                        Garniture pâtissière
+                                        soufflé. Tarte à la guimauve oursie de gaufrette gummi.
                                     </div>
                                 </div>
                             </div>
@@ -820,17 +819,17 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
-                                        Do I need to purchase a license for each website?
+                                        Dois-je acheter une licence pour chaque site Web ?
                                     </button>
                                 </h2>
                                 <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw
-                                        dragée oat cake
-                                        dragée ice cream halvah tootsie roll. Danish cake oat cake pie macaroon tart
-                                        donut gummies. Jelly
-                                        beans candy canes carrot cake. Fruitcake chocolate chupa chups.
+                                        Dessert : glace, beignet, gâteau à l’avoine, tarte à la gelée, gâteau au fromage au sucre et aux prunes. Griffe d’ours
+                                        Gâteau à l’avoine dragée
+                                        Glace dragée halvah tootsie roll. Gâteau danois, gâteau à l’avoine, tarte aux macarons
+                                        gommes beignets. Gelée
+                                        haricots, cannes de bonbon, gâteau aux carottes. Gâteau aux fruits, chupa au chocolat.
                                     </div>
                                 </div>
                             </div>
@@ -839,23 +838,23 @@
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionThree" aria-expanded="false"
                                         aria-controls="accordionThree">
-                                        What is regular license?
+                                        Qu’est-ce que le permis régulier ?
                                     </button>
                                 </h2>
                                 <div id="accordionThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Regular license can be used for end products that do not charge users for access
-                                        or service(access
-                                        is free and there will be no monthly subscription fee). Single regular license
-                                        can be used for
-                                        single end product and end product can be used by you or your client. If you
-                                        want to sell end
-                                        product to multiple clients then you will need to purchase separate license for
-                                        each client. The
-                                        same rule applies if you want to use the same end product on multiple
-                                        domains(unique setup). For
-                                        more info on regular license you can check official description.
+                                        La licence standard peut être utilisée pour les produits finaux qui ne facturent pas l’accès aux utilisateurs
+                                        ou service(accès
+                                        est gratuit et il n’y aura pas de frais d’abonnement mensuels). Permis régulier unique
+                                        peut être utilisé pour
+                                        Le produit final unique et le produit final peuvent être utilisés par vous ou votre client. Si vous
+                                        Envie de vendre fin
+                                        à plusieurs clients, vous devrez alors acheter une licence distincte pour
+                                        chaque client. Le
+                                        La même règle s’applique si vous souhaitez utiliser le même produit final sur plusieurs
+                                        domaines(configuration unique). Pour
+                                        Plus d’informations sur le permis régulier, vous pouvez vérifier la description officielle.
                                     </div>
                                 </div>
                             </div>
@@ -863,7 +862,7 @@
                                 <h2 class="accordion-header" id="headingFour">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">
-                                        What is extended license?
+                                        Qu’est-ce que la licence étendue ?
                                     </button>
                                 </h2>
                                 <div id="accordionFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -881,7 +880,7 @@
                                 <h2 class="accordion-header" id="headingFive">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">
-                                        Which license is applicable for SASS application?
+                                        Quelle licence est applicable pour l’application SASS ?
                                     </button>
                                 </h2>
                                 <div id="accordionFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
@@ -907,9 +906,9 @@
             <div class="container">
                 <div class="row align-items-center gy-5 gy-lg-0">
                     <div class="text-center col-lg-6 text-lg-start">
-                        <h6 class="mb-1 h2 text-primary fw-bold">Ready to Get Started?</h6>
-                        <p class="mb-4 fw-medium">Start your project with a 14-day free trial</p>
-                        <a href="payment-page.html" class="btn btn-lg btn-primary">Get Started</a>
+                        <h6 class="mb-1 h2 text-primary fw-bold">Prêt à commencer?</h6>
+                        <p class="mb-4 fw-medium">Démarrez votre projet avec un essai gratuit de 30 jours</p>
+                        <a href="payment-page.html" class="btn btn-lg btn-primary">Démarrer</a>
                     </div>
                     <div class="text-center col-lg-6 pt-lg-5 text-lg-end">
                         <img src="assets/img/front-pages/landing-page/cta-dashboard.png" alt="cta dashboard"
@@ -924,10 +923,10 @@
         <section id="landingContact" class="section-py bg-body landing-contact">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Contact US</span>
+                    <hspan class="badge bg-label-primary">Contact</hspan>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Let's work</span> together</h3>
-                <p class="mb-4 text-center mb-lg-5 pb-md-3">Any question or remark? just write us a message</p>
+                <h3 class="mb-1 text-center"><span class="section-title">Travaillons</span> together</h3>
+                <p class="mb-4 text-center mb-lg-5 pb-md-3">Une question ou une remarque ? Une question ou une remarque ? Écrivez-nous simplement un message</p>
                 <div class="row gy-4">
                     <div class="col-lg-5">
                         <div class="p-2 border contact-img-box position-relative h-100">
@@ -938,12 +937,17 @@
                                     <div class="col-md-6 col-lg-12 col-xl-6">
                                         <div class="d-flex align-items-center">
                                             <div class="p-2 rounded badge bg-label-primary me-2"><i
-                                                    class="ti ti-mail ti-sm"></i></div>
+                                                    class="ti ti-mail ti-sm">
+                                                </i></div>
+
+
                                             <div>
-                                                <p class="mb-0">Email</p>
+                                                <p>Email et Site</p>
                                                 <h5 class="mb-0">
-                                                    <a href="mailto:example@gmail.com"
-                                                        class="text-heading">example@gmail.com</a>
+                                                    <a href="mailto:Contact@gasikara.mg"
+                                                        class="text-heading">Contact@gasikara.mg<br>
+                                                        https://digital.gasikara.mg</a>
+
                                                 </h5>
                                             </div>
                                         </div>
@@ -955,43 +959,49 @@
                                             </div>
                                             <div>
                                                 <p class="mb-0">Phone</p>
-                                                <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+1234
-                                                        568 963</a></h5>
+                                                <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+261 34
+                                                        93 452 51 <br> +33 6 24 25 07 34 </a></h5>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <h3>Address</h3>
+                            <p>Plateau de tombe, Mahajanga ville 401 Madagascar
+                            </p>
                         </div>
+
+
+
                     </div>
                     <div class="col-lg-7">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="mb-1">Send a message</h4>
+                                <h4 class="mb-1">Envoyer message</h4>
                                 <p class="mb-4">
-                                    If you would like to discuss anything related to payment, account, licensing,<br
-                                        class="d-none d-lg-block" />
-                                    partnerships, or have pre-sales questions, you’re at the right place.
+                                    Recevez les dernières nouvelles, conseils exclusifs et offres spéciales ,<br
+                                        class="d-none d-lg-block" />directement dans votre boîte mail.
+                                    .
                                 </p>
                                 <form>
                                     <div class="row g-3">
                                         <div class="col-md-6">
-                                            <label class="form-label" for="contact-form-fullname">Full Name</label>
+                                            <label class="form-label" for="contact-form-fullname">Nom</label>
                                             <input type="text" class="form-control" id="contact-form-fullname"
-                                                placeholder="john" />
+                                                placeholder="" />
                                         </div>
                                         <div class="col-md-6">
                                             <label class="form-label" for="contact-form-email">Email</label>
                                             <input type="text" id="contact-form-email" class="form-control"
-                                                placeholder="johndoe@gmail.com" />
+                                                placeholder="" />
                                         </div>
                                         <div class="col-12">
                                             <label class="form-label" for="contact-form-message">Message</label>
                                             <textarea id="contact-form-message" class="form-control" rows="8"
-                                                placeholder="Write a message"></textarea>
+                                                placeholder="votre message"></textarea>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Send inquiry</button>
+                                            <button type="submit" class="btn btn-primary">Envoyer une demande</button>
                                         </div>
                                     </div>
                                 </form>

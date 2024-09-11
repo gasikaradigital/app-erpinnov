@@ -82,73 +82,72 @@
                                         fill="#7367F0" />
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Vuexy</span>
+                            <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Erpinnov.com</span>
                         </a>
                         <p class="mb-4 footer-text footer-logo-description">
-                            Most developer friendly & highly customisable Admin Dashboard Template.
+                            Modèle de tableau de bord d’administration le plus convivial et hautement personnalisable pour les développeuses.
                         </p>
                         <form class="footer-form">
-                            <label for="footer-email" class="small">Subscribe to newsletter</label>
+                            <label for="footer-email" class="small">S’abonner à la newsletter</label>
                             <div class="mt-1 d-flex">
                                 <input type="email" class="form-control rounded-0 rounded-start-bottom rounded-start-top"
-                                    id="footer-email" placeholder="Your email" />
+                                    id="footer-email" placeholder="" />
                                 <button type="submit"
-                                    class="shadow-none btn btn-primary rounded-0 rounded-end-bottom rounded-end-top">
-                                    Subscribe
+                                    class="shadow-none btn btn-primary rounded-0 rounded-end-bottom rounded-end-top" >
+                                    S’abonner
                                 </button>
                             </div>
                         </form>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6">
-                        <h6 class="mb-4 footer-title">Demos</h6>
+                        <h6 class="mb-4 footer-title">Menu</h6>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <a href="../vertical-menu-template/" target="_blank" class="footer-link">Vertical
-                                    Layout</a>
+                                <a href="../vertical-menu-template/" target="_blank" class="footer-link">Acceuil
+                                    </a>
                             </li>
                             <li class="mb-3">
-                                <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Horizontal
-                                    Layout</a>
+                                <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Tarif
+                                    </a>
                             </li>
                             <li class="mb-3">
-                                <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Bordered
-                                    Layout</a>
+                                <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Blog
+                                    </a>
                             </li>
                             <li class="mb-3">
-                                <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">Semi
-                                    Dark Layout</a>
+                                <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">FAQ
+                                    </a>
                             </li>
                             <li class="mb-3">
 
-                                <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Dark
-                                    Layout</a>
+                                <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Contact
+                                    </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6">
-                        <h6 class="mb-4 footer-title">Pages</h6>
+                        <h6 class="mb-4 footer-title">Aides</h6>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <a href="pricing-page.html" class="footer-link">Pricing</a>
+                                <a href="pricing-page.html" class="footer-link">Dolibarr ERP/CRM</a>
                             </li>
                             <li class="mb-3">
-                                <a href="payment-page.html" class="footer-link">Payment<span
-                                        class="rounded badge bg-primary ms-2">New</span></a>
+                                <a href="payment-page.html" class="footer-link">Documentation</a>
                             </li>
                             <li class="mb-3">
-                                <a href="checkout-page.html" class="footer-link">Checkout</a>
+                                <a href="checkout-page.html" class="footer-link">Tutoriel Videos</a>
                             </li>
                             <li class="mb-3">
-                                <a href="help-center-landing.html" class="footer-link">Help Center</a>
+                                <a href="help-center-landing.html" class="footer-link">Status des cervices</a>
                             </li>
                             <li class="mb-3">
-                                <a href="../vertical-menu-template/auth-login-cover.html" target="_blank"
-                                    class="footer-link">Login/Register</a>
+                                <a href="/login" target="_blank"
+                                    class="footer-link">Votre espace client</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <h6 class="mb-4 footer-title">Download our app</h6>
+                        <h6 class="mb-4 footer-title">Téléchargez notre application</h6>
                         <a href="javascript:void(0);" class="pb-2 mb-3 d-block footer-link"><img
                                 src="assets/img/front-pages/landing-page/apple-icon.png" alt="apple icon" /></a>
                         <a href="javascript:void(0);" class="d-block footer-link"><img
@@ -167,7 +166,7 @@
                         </script>
                     </span>
                     <a href="https://pixinvent.com" target="_blank" class="text-white fw-medium footer-link">Pixinvent,</a>
-                    <span class="footer-text"> Made with ❤️ for a better web.</span>
+                    <span class="footer-text"> Fait avec pour ❤️ une meilleure toile.</span>
                 </div>
                 <div>
                     <a href="https://github.com/pixinvent" class="footer-link me-3" target="_blank">
