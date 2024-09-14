@@ -64,4 +64,17 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+
+    // Relation avec le modèle Subscription (Un utilisateur peut avoir plusieurs abonnements)
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
+    // Relation avec le modèle Instance (Un utilisateur peut créer plusieurs instances Dolibarr)
+    public function instances()
+    {
+        return $this->hasMany(Instance::class);
+    }
 }

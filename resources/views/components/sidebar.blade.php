@@ -116,6 +116,7 @@
                 </li>
             </ul>
         </li>
+        @can('admin')
         <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-settings"></i>
@@ -134,6 +135,7 @@
                 </li>
             </ul>
         </li>
+        @endcan
     </ul>
 </aside>
 <!-- / Menu -->

@@ -8,6 +8,6 @@ class HomeSuperAdmin extends Component
 {
     public function render()
     {
-        return view('livewire.admin.home-super-admin');
+        return view('livewire.admin.home-super-admin')->layout('layouts.homeAdmin');
     }
 }

@@ -1,10 +1,13 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\Client\HomeClient;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Admin\HomeSuperAdmin;
-use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
+use App\Livewire\Client\FactureClient;
+use App\Livewire\Client\InstanceListes;
+use App\Livewire\Client\CreateInstances;
 
 
 Route::get('/', HomePage::class)->name('homepage');
@@ -32,16 +35,24 @@ Route::get('/redirect', function () {
 // routes listes
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
+    // Route for SuperAdmin
     Route::middleware(['role:superadmin|manager'])->prefix('fulladmin')->group(function () {
 
         Route::get('/', HomeSuperAdmin::class)->name('superAdmin');
 
     });
 
+
+    // Route for Client
     Route::middleware(['role:client'])->prefix('client-espace')->group(function () {
-        Route::get('/client', function () {
-            return view('client');
-        })->name('espaceClient');
+
+        Route::get('/client', HomeClient::class)->name('espaceClient');
+
+        Route::get('/facturation', FactureClient::class)->name('client.facture');
+
+        Route::get('/instance/create', CreateInstances::class)->name('instance.create');
+        Route::get('/instances', InstanceListes::class)->name('instances.list');
+
     });
 
 });
