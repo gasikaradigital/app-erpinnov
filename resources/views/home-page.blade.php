@@ -41,14 +41,14 @@
         <!-- Useful features: Start -->
         <section id="landingFeatures" class="section-py landing-features">
             <div class="container">
-                <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Caractéristiques utiles</span>
-                </div>
-                <h3 class="mb-1 text-center">
-                    <span class="section-title">Tout ce dont vous avez besoin</span> pour démarrer votre prochain projet
-                </h3>
+                <h1 class="pb-1 mb-3 text-center">
+                    <span class="title">Modules</span>
+                </h1>
+                <h5 class="mb-1 text-center">
+                    <p class="title">Découvrez nos modules conçus pour simplifier et optimiser la gestion de votre entreprise. De la gestion des ressources humaines à la productivité, en passant par les ventes et la finance, chaque module est pensé pour répondre à vos besoins. Gagnez du temps et améliorez vos performances avec des outils adaptés et intuitifs..</p>
+                </h5>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-                    Il ne s’agit pas d’un simple ensemble d’outils, mais d’une application conceptuelle prête à être déployée.
+
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -57,7 +57,7 @@
                         </div>
                         <h4><a href="#">CRM & Ventes</a></h4>
                         <p class="features-icon-description">
-                            Structure du code que tous les développeurs comprendront facilement et dont ils tomberont amoureux.
+                            Le module CRM & Ventes permet de gérer les prospects, clients, opportunités, devis, commandes, contrats, abonnements, et les services d'assistance/tickets.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -66,7 +66,7 @@
                         </div>
                         <h4><a href="#">Marketing</a></h4>
                         <p class="features-icon-description">
-                            Mises à jour gratuites pour les 12 prochains mois, y compris de nouvelles démos et fonctionnalités.
+                            Boostez votre stratégie Marketing avec des outils performants pour Emailing et Enquêtes. Engagez vos clients efficacement et mesurez l’impact de vos actions.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -75,7 +75,7 @@
                         </div>
                         <h4><a href="#">Finance & Facturation</a></h4>
                         <p class="features-icon-description">
-                            Démarrez votre projet rapidement sans avoir à supprimer les fonctionnalités inutiles.
+                            Optimisez votre gestion financière, Paiements et Rapprochement bancaire. Simplifiez votre Comptabilité à double entrée pour une maîtrise complète de vos finances.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -84,7 +84,7 @@
                         </div>
                         <h4><a href="#">Produit & Stock</a></h4>
                         <p class="features-icon-description">
-                            Il vous suffit de changer le point de terminaison et de voir vos propres données chargées en quelques secondes.
+                            Gérez efficacement vos Produits, Services, Stocks, Achats, et Expéditions. Optimisez votre chaîne d’approvisionnement et la Fabrication pour une performance accrue.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -92,16 +92,14 @@
                             <img src="assets/img/front-pages/icons/user.png" alt="lifebelt" />
                         </div>
                         <h4><a href="#">Ressources Humaines</a></h4>
-                        <p class="features-icon-description">Un document facile à suivre avec de nombreuses références et du code
-                            examples.</p>
+                        <p class="features-icon-description">Le module Ressources Humaines gère les employés, les notes de frais, les demandes de congé, les feuilles de temps, le recrutement et la gestion des compétences.</p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/keyboard.png" alt="google docs" />
                         </div>
                         <h4><a href="#">Productivité</a></h4>
-                        <p class="features-icon-description">Un document facile à suivre avec de nombreuses références et du code
-                            examples.</p>
+                        <p class="features-icon-description">Améliorez votre Productivité en gérant efficacement Projets, Tâches, et Interventions. Planifiez votre Agenda et suivez vos activités en un seul endroit.</p>
                     </div>
                 </div>
             </div>
@@ -115,12 +113,12 @@
                 <div class="row align-items-center gx-0 gy-4 g-lg-5">
                     <div class="col-md-6 col-lg-5 col-xl-3">
                         <div class="pb-1 mb-3">
-                            <span class="badge bg-label-primary">Real Avis des clients</span>
+                            <span class="badge bg-label-primary"></span>
                         </div>
-                        <h3 class="mb-1"><span class="section-title">Ce que les gens disent</span></h3>
+                        <h3 class="mb-1"><span class="section-title">Vous êtes une société (TPE, PME), libéral, micro-entreprise ou association</span></h3>
                         <p class="mb-3 mb-md-5">
-                            Voyez ce que nos clients ont à faire<br class="d-none d-xl-block" />
-                            de leur expérience.
+                            <br class="d-none d-xl-block" />
+
                         </p>
                         <div class="landing-reviews-btns">
                             <button id="reviews-previous-btn" class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
@@ -142,13 +140,10 @@
                                             <div
                                                 class="card-body text-body d-flex flex-column justify-content-between h-100">
                                                 <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-1.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
+                                                    <h3 class="title">CRM & Ventes</h3>
                                                 </div>
                                                 <p>
-                                                    "Vuexy est sans conteste le thème Bootstrap front-end le plus utile que j’ai
-                                                    jamais utilisé. J’ai hâte
-                                                    pour l’utiliser à nouveau pour mon prochain projet.
+                                                   Le CRM vous aide à gérer vos clients de manière efficace et personnalisée. Suivez vos interactions, optimisez votre relation client, et boostez vos ventes grâce à des outils performants.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -158,14 +153,7 @@
                                                     <i class="ti ti-star-filled ti-sm"></i>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/1.png" alt="Avatar"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Cecilia Payne</h6>
-                                                        <p class="mb-0 small text-muted">PDG d’Airbnb</p>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -175,13 +163,32 @@
                                             <div
                                                 class="card-body text-body d-flex flex-column justify-content-between h-100">
                                                 <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-2.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
+                                                    <h3 class="title">Marketing</h3>
                                                 </div>
                                                 <p>
-                                                    « Je n’ai jamais utilisé un thème aussi polyvalent et flexible que Vuexy. C’est mon
-                                                    Aller à Pour la construction
-                                                    des sites de tableau de bord sur presque tous les projets.
+                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
+                                                <div class="mb-3 text-warning">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div
+                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <h3 class="title">Finance & Facturation</h3>
+                                                </div>
+                                                <p>
+                                                    Optimisez votre gestion d'entreprise avec notre solution intégrée pour la Finance, la Facturation et la Productivité. Gérez vos finances et vos factures avec précision tout en améliorant l'efficacité de vos équipes. Centralisez toutes vos opérations pour un fonctionnement fluide et performant.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -191,14 +198,7 @@
                                                     <i class="ti ti-star-filled ti-sm"></i>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/2.png" alt="Avatar"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="mb-0 small text-muted">Fondateur de Hubspot</p>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -208,13 +208,33 @@
                                             <div
                                                 class="card-body text-body d-flex flex-column justify-content-between h-100">
                                                 <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-3.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
+                                                    <h3 class="title">Produit & Stock</h3>
                                                 </div>
                                                 <p>
-                                                    Ce modèle est vraiment propre et bien documenté. Les docs sont vraiment
-                                                    facile à comprendre et
-                                                    Il est toujours facile de trouver une capture d’écran sur leur site Web.
+                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
+                                                </p>
+                                                <div class="mb-3 text-warning">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div
+                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <h3 class="title">Ressources Humaines</h3>
+                                                </div>
+                                                <p>
+                                                    Notre solution RH simplifie la gestion de vos ressources humaines avec des outils intuitifs. Automatisez les processus de recrutement, suivez les performances des employés et optimisez la gestion des congés. Facilitez la gestion de votre équipe et améliorez la satisfaction au travail.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -224,14 +244,8 @@
                                                     <i class="ti ti-star-filled ti-sm"></i>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/3.png" alt="Avatar"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Curtis Fletcher</h6>
-                                                        <p class="mb-0 small text-muted">Design Lead chez Dribbble</p>
-                                                    </div>
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -241,13 +255,10 @@
                                             <div
                                                 class="card-body text-body d-flex flex-column justify-content-between h-100">
                                                 <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-4.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
+                                                    <h3 class="title">Marketing</h3>
                                                 </div>
                                                 <p>
-                                                    Toutes les exigences pour les développeurs ont été prises en compte
-                                                    considération, donc je suis capable de construire
-                                                    n’importe quelle interface que je veux.
+                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
                                                 </p>
                                                 <div class="mb-3 text-warning">
                                                     <i class="ti ti-star-filled ti-sm"></i>
@@ -258,79 +269,9 @@
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/4.png" alt="Avatar"
-                                                            class="rounded-circle" />
+
                                                     </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="mb-0 small text-muted">Fondateur de Continental</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-5.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
-                                                </div>
-                                                <p>
-                                                    « Je n’ai jamais utilisé un thème aussi polyvalent et flexible que Vuexy. C’est mon
-                                                    Aller à Pour la construction
-                                                    des sites de tableau de bord sur presque tous les projets.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/5.png" alt="Avatar"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="mb-0 small text-muted">Fondateur de Hubspot</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img src="assets/img/front-pages/branding/logo-6.png" alt="client logo"
-                                                        class="client-logo img-fluid" />
-                                                </div>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo
-                                                    Mollitia, ad eum
-                                                    Officia numquam nostrum repellendus consequuntur !
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="assets/img/avatars/1.png" alt="Avatar"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="mb-0 small text-muted">Fondateur de Continental</p>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -345,122 +286,21 @@
             </div>
             <!-- What people say slider: End -->
             <hr class="m-0" />
-            <!-- Logo slider: Start -->
-            <div class="container">
-                <div class="py-4 swiper-logo-carousel my-lg-2">
-                    <div class="swiper" id="swiper-clients-logos">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="assets/img/front-pages/branding/logo_1-light.png" alt="client logo"
-                                    class="client-logo" data-app-light-img="front-pages/branding/logo_1-light.png"
-                                    data-app-dark-img="front-pages/branding/logo_1-dark.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/front-pages/branding/logo_2-light.png" alt="client logo"
-                                    class="client-logo" data-app-light-img="front-pages/branding/logo_2-light.png"
-                                    data-app-dark-img="front-pages/branding/logo_2-dark.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/front-pages/branding/logo_3-light.png" alt="client logo"
-                                    class="client-logo" data-app-light-img="front-pages/branding/logo_3-light.png"
-                                    data-app-dark-img="front-pages/branding/logo_3-dark.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/front-pages/branding/logo_4-light.png" alt="client logo"
-                                    class="client-logo" data-app-light-img="front-pages/branding/logo_4-light.png"
-                                    data-app-dark-img="front-pages/branding/logo_4-dark.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/front-pages/branding/logo_5-light.png" alt="client logo"
-                                    class="client-logo" data-app-light-img="front-pages/branding/logo_5-light.png"
-                                    data-app-dark-img="front-pages/branding/logo_5-dark.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Logo slider: End -->
+
         </section>
         <!-- Real customers reviews: End -->
 
-        <!-- Our great team: Start -->
-        <section id="landingTeam" class="section-py landing-team">
-            <div class="container">
-                <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Notre grande équipe</span>
-                </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Supporté</span> par Real People</h3>
-                <p class="pb-3 text-center mb-md-5">Qui se cache derrière ces interfaces ravissantes ?</p>
-                <div class="mt-2 row gy-5">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="mt-3 shadow-none card mt-lg-0">
-                            <div class="bg-label-primary position-relative team-image-box">
-                                <img src="assets/img/front-pages/landing-page/team-member-1.png"
-                                    class="bottom-0 position-absolute card-img-position start-50 scaleX-n1-rtl"
-                                    alt="human image" />
-                            </div>
-                            <div class="text-center border card-body border-top-0 border-label-primary">
-                                <h5 class="mb-0 card-title">Sophie Gilbert</h5>
-                                <p class="mb-0 text-muted">Chef de projet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="mt-3 shadow-none card mt-lg-0">
-                            <div class="bg-label-info position-relative team-image-box">
-                                <img src="assets/img/front-pages/landing-page/team-member-2.png"
-                                    class="bottom-0 position-absolute card-img-position start-50 scaleX-n1-rtl"
-                                    alt="human image" />
-                            </div>
-                            <div class="text-center border card-body border-top-0 border-label-info">
-                                <h5 class="mb-0 card-title">Paul Miles</h5>
-                                <p class="mb-0 text-muted">UI Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="mt-3 shadow-none card mt-lg-0">
-                            <div class="bg-label-danger position-relative team-image-box">
-                                <img src="assets/img/front-pages/landing-page/team-member-3.png"
-                                    class="bottom-0 position-absolute card-img-position start-50 scaleX-n1-rtl"
-                                    alt="human image" />
-                            </div>
-                            <div class="text-center border card-body border-top-0 border-label-danger">
-                                <h5 class="mb-0 card-title">Nannie Ford</h5>
-                                <p class="mb-0 text-muted">Responsable du développement</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="mt-3 shadow-none card mt-lg-0">
-                            <div class="bg-label-success position-relative team-image-box">
-                                <img src="assets/img/front-pages/landing-page/team-member-4.png"
-                                    class="bottom-0 position-absolute card-img-position start-50 scaleX-n1-rtl"
-                                    alt="human image" />
-                            </div>
-                            <div class="text-center border card-body border-top-0 border-label-success">
-                                <h5 class="mb-0 card-title">Chris Watkins</h5>
-                                <p class="mb-0 text-muted">Responsable Marketing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Our great team: End -->
 
         <!-- Pricing plans: Start -->
         <section id="landingPricing" class="section-py bg-body landing-pricing">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Plans tarifaires</span>
+                    <h1 class="-mt-2title">TARIF</h1>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Des plans tarifaires sur mesure</span> conçus pour vous
-                </h3>
+                <h5 class="mb-1 text-center"><span class="">ERPINNOV.COM offre la suite de gestion d'entreprises Dolibarr ERP CRM en ligne, prête pour l'entreprise, les indépendants ou les associations. Son coût reste fixe quelque soit le nombre d'applications de la suite que vous utilisez.</span>
+                </h5>
                 <p class="pb-3 mb-4 text-center">
-                    Tous les plans incluent 40+ outils et fonctionnalités avancés pour booster votre produit.<br />Choisissez le meilleur plan
-                    pour s’adapter
-                    vos besoins.
+
                 </p>
                 <div class="mb-5 text-center">
                     <div class="pt-3 position-relative d-inline-block pt-md-0">
@@ -476,7 +316,7 @@
                         <div class="pricing-plans-item position-absolute d-flex">
                             <img src="assets/img/front-pages/icons/pricing-plans-arrow.png" alt="pricing plans arrow"
                                 class="scaleX-n1-rtl" />
-                            <span class="mt-2 fw-semibold ms-1"> Save 25%</span>
+                            <span class="mt-2 fw-semibold ms-1"> </span>
                         </div>
                     </div>
                 </div>
@@ -488,48 +328,59 @@
                                 <div class="text-center">
                                     <img src="assets/img/front-pages/icons/paper-airplane.png" alt="paper airplane icon"
                                         class="pb-2 mb-4" />
-                                    <h4 class="mb-1">Basic</h4>
+                                    <h4 class="mb-1">GRATUIT</h4>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <span class="mb-0 price-monthly h1 text-primary fw-bold">$19</span>
-                                        <span class="mb-0 price-yearly h1 text-primary fw-bold d-none">$14</span>
-                                        <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
+                                        <span class="mb-0 price-monthly h1 text-primary fw-bold">$0</span>
+                                        <span class="mb-0 price-yearly h1 text-primary fw-bold d-none">$0</span>
+                                        <sub class="mb-0 h6 text-muted ms-1">/mois</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 168 / ans
+                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 0 / mois
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <ul class="list-unstyled">
+
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Chronologie
+                                                    Tout est en gratuit
+                                        </h5>
+                                    </li>
+
+                                    <li>
+                                        <h5>
+                                            <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                                    class="ti ti-check ti-xs"></i></span>
+                                                    Chronologie avec base de données
+                                        </h5>
+                                    </li>
+
+                                    <li>
+                                        <h5>
+                                            <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                                    class="ti ti-check ti-xs"></i></span>
+                                                    Tous les modules de Dolibarr (modules officiels - exemples)
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Recherche de base
+                                                    Accessibilité depuis tout accès internet, tout navigateur, tout OS
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            LWidget de chat ive
+                                                    Disponibilité 24/7
                                         </h5>
                                     </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                            Email marketing
-                                        </h5>
-                                    </li>
+
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
@@ -553,8 +404,10 @@
                                     </li>
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Démarrer</a>
+                                    <a href="payment-page.html" class="btn btn-label-primary">Installer maintenant</a>
                                 </div>
+                                <br>
+                                <p>Test gratuit (30 jours ou plus, sans engagement)</p>
                             </div>
                         </div>
                     </div>
@@ -562,15 +415,15 @@
 
                     <!-- Favourite Plan: Start -->
                     <div class="col-xl-4 col-lg-6">
-                        <div class="border shadow-lg card border-primary">
+                        <div class="border shadow-lg card border">
                             <div class="card-header">
                                 <div class="text-center">
                                     <img src="assets/img/front-pages/icons/plane.png" alt="plane icon" class="pb-2 mb-4" />
-                                    <h4 class="mb-1">Team</h4>
+                                    <h4 class="mb-1">Dolibarr Basic</h4>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <span class="mb-0 price-monthly h1 text-primary fw-bold">$29</span>
                                         <span class="mb-0 price-yearly h1 text-primary fw-bold d-none">$22</span>
-                                        <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
+                                        <sub class="mb-0 h6 text-muted ms-1">/mois</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
                                         <div class="price-yearly text-muted price-yearly-toggle d-none">$ 264 / ans
@@ -598,41 +451,42 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Recherche avancée
+                                                    Tous les modules de Dolibarr (modules officiels - exemples)
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Automatisation du marketing
+                                                    Accessibilité depuis tout accès internet, tout navigateur, tout OS
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Chatbot avancé
+                                                    Disponibilité 24/7</h5>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
+                                                    class="ti ti-check ti-xs"></i></span>
+                                                    Support technique (par ticket en anglais ou français)
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Gestion de campagnes
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Outils de collaboration
+                                                    Sauvegardes journalières (30 jours glissant)
                                         </h5>
                                     </li>
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-primary">Get Started</a>
+                                    <a href="payment-page.html" class="btn btn-primary">Installer maintenant</a>
                                 </div>
+                                <br>
+                                <p>Test gratuit (30 jours ou plus, sans engagement)</p>
                             </div>
                         </div>
                     </div>
@@ -645,11 +499,11 @@
                                 <div class="text-center">
                                     <img src="assets/img/front-pages/icons/shuttle-rocket.png" alt="shuttle rocket icon"
                                         class="pb-2 mb-4" />
-                                    <h4 class="mb-1">Enterprise</h4>
+                                    <h4 class="mb-1">Dolibarr Premium</h4>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <span class="mb-0 price-monthly h1 text-primary fw-bold">$49</span>
                                         <span class="mb-0 price-yearly h1 text-primary fw-bold d-none">$37</span>
-                                        <sub class="mb-0 h6 text-muted ms-1">/mo</sub>
+                                        <sub class="mb-0 h6 text-muted ms-1">/mois</sub>
                                     </div>
                                     <div class="pt-2 position-relative">
                                         <div class="price-yearly text-muted price-yearly-toggle d-none">$ 444 / ans
@@ -677,43 +531,51 @@
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Recherche floue
+                                                    Tous les modules de Dolibarr (modules officiels - exemples)
+                                        </h5>
+                                    </li>
+
+                                    <li>
+                                        <h5>
+                                            <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                                    class="ti ti-check ti-xs"></i></span>
+                                                    Disponibilité 24/7
                                         </h5>
                                     </li>
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                            A/B Test de Sanbox
+                                                    Support technique (par ticket en anglais ou français)
                                         </h5>
                                     </li>
+
+
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Autorisations personnalisées
+                                                    Modification/Ajout d'extension et code possible (à déployer soi même)
                                         </h5>
                                     </li>
+
                                     <li>
                                         <h5>
                                             <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
                                                     class="ti ti-check ti-xs"></i></span>
-                                                    Automatisation des médias sociaux
+                                                    Possibilité de faire tourner le planificateur de tâches Dolibarr 1 fois/jour
                                         </h5>
                                     </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Outils d’automatisation des ventes
-                                        </h5>
-                                    </li>
+
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Démarrer</a>
+                                    <a href="payment-page.html" class="btn btn-label-primary">Installer maintenant</a>
                                 </div>
-                            </div>
+                                <br>
+                                <p>Test gratuit (30 jours ou plus, sans engagement)</p>
                         </div>
+                            </div>
+
                     </div>
                     <!-- Standard Plan: End -->
                 </div>
@@ -782,10 +644,10 @@
         <section id="landingFAQ" class="section-py bg-body landing-faq">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">FAQ</span>
+                    <span class="badge bg-label-primary"></span>
                 </div>
-                <h3 class="mb-1 text-center">Foire aux questions <span class="section-title">questions</span></h3>
-                <p class="pb-3 mb-5 text-center">Parcourez ces FAQ pour trouver les réponses aux questions les plus fréquemment posées.
+                <h3 class="mb-1 text-center">Questions techniques clients <span class="section-title"></span></h3>
+                <p class="pb-3 mb-5 text-center">
                 </p>
                 <div class="row gy-5">
                     <div class="col-lg-5">
@@ -800,18 +662,17 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button type="button" class="accordion-button" data-bs-toggle="collapse"
                                         data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
-                                        Facturez-vous chaque mise à niveau ?
+                                        J'utilise déjà l'application Dolibarr ERP CRM sur un autre serveur. Comment puis-je migrer vers DoliCloud ?
                                     </button>
                                 </h2>
 
                                 <div id="accordionOne" class="accordion-collapse collapse show"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Gouttes de citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes, chupa chups, garniture de muffins.
-                                        Glaçage au sésame
-                                        Pâte d’amande, oursons gélifiés, macaron, dragée, caramels danois, poudre. Griffe d’ours dragée
-                                        Garniture pâtissière
-                                        soufflé. Tarte à la guimauve oursie de gaufrette gummi.
+                                        Migrer mon application Dolibarr vers une instance autogérée dans le Cloud chez DoliCloud .
+                                        Vous trouverez ici le lien vers la Documentation Wiki de Dolibarr qui décrit comment réaliser, pas à pas,
+                                         la migration de vos données d'une instance existante de Dolibarr vers celle de DoliCloud :
+                                         https://wiki.dolibarr.org/index.php/Migrer_mon_Dolibarr_vers_une_offre_Cloud
                                     </div>
                                 </div>
                             </div>
@@ -819,17 +680,15 @@
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
-                                        Dois-je acheter une licence pour chaque site Web ?
+                                        J'ai une sauvegarde de Dolibarr. Comment la restaurer sur DoliCloud ?
                                     </button>
                                 </h2>
                                 <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Dessert : glace, beignet, gâteau à l’avoine, tarte à la gelée, gâteau au fromage au sucre et aux prunes. Griffe d’ours
-                                        Gâteau à l’avoine dragée
-                                        Glace dragée halvah tootsie roll. Gâteau danois, gâteau à l’avoine, tarte aux macarons
-                                        gommes beignets. Gelée
-                                        haricots, cannes de bonbon, gâteau aux carottes. Gâteau aux fruits, chupa au chocolat.
+                                        Restorer des données est une opération risquée. Cela écrase les données existantes,
+                                         aussi vous perdrez toutes les données courantes de votre instance car elles seront remplacées par d'autres. De plus, si le processus échoue, vous pouvez rendre votre application instable. Dans la plupart des cas, une "restauration" doit être faite dans des situations très particulières (le plus fréquent étant
+                                        un changement de fournisseur ou de serveur d'hébergement, mais aussi la perte d'un disque dur)
                                     </div>
                                 </div>
                             </div>
@@ -838,23 +697,15 @@
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionThree" aria-expanded="false"
                                         aria-controls="accordionThree">
-                                        Qu’est-ce que le permis régulier ?
+                                     Comment avoir une deuxième instance pour test ou pré-production ?
                                     </button>
                                 </h2>
                                 <div id="accordionThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        La licence standard peut être utilisée pour les produits finaux qui ne facturent pas l’accès aux utilisateurs
-                                        ou service(accès
-                                        est gratuit et il n’y aura pas de frais d’abonnement mensuels). Permis régulier unique
-                                        peut être utilisé pour
-                                        Le produit final unique et le produit final peuvent être utilisés par vous ou votre client. Si vous
-                                        Envie de vendre fin
-                                        à plusieurs clients, vous devrez alors acheter une licence distincte pour
-                                        chaque client. Le
-                                        La même règle s’applique si vous souhaitez utiliser le même produit final sur plusieurs
-                                        domaines(configuration unique). Pour
-                                        Plus d’informations sur le permis régulier, vous pouvez vérifier la description officielle.
+                                        Vous avez déjà une instance de Dolibarr ERP CRM qui tourne en production
+                                        et vous désirez faire des tests dessus de nouveaux paramétrages ou de fonctionnement
+                                         d'un module externe.
                                     </div>
                                 </div>
                             </div>
@@ -862,17 +713,15 @@
                                 <h2 class="accordion-header" id="headingFour">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">
-                                        Qu’est-ce que la licence étendue ?
+                                        Comment accéder à ma base de donnée avec un client Mysql ?
                                     </button>
                                 </h2>
                                 <div id="accordionFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid
-                                        quaerat possimus maxime!
-                                        Mollitia reprehenderit neque repellat deleniti delectus architecto dolorum
-                                        maxime, blanditiis
-                                        earum ea, incidunt quam possimus cumque.
+                                        Notez que se connecter directement à votre base de donnée Dolicloud vous permet de voir mais aussi modifier la base. Parce que les modifications sont faites en base directement,
+                                         si vous n'avez pas les connaissances techniques sur comment est architecturée la base, vous prenez aussi un risque de rendre incohérentes vos données et par conséquent votre application instable. Aussi,
+                                         l'accès en direct à votre base de donnée est à utiliser à vos risques et périls.
                                     </div>
                                 </div>
                             </div>
@@ -880,17 +729,32 @@
                                 <h2 class="accordion-header" id="headingFive">
                                     <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">
-                                        Quelle licence est applicable pour l’application SASS ?
+                                        Comment déployer un module externe sur mon instance Dolibarr?
                                     </button>
                                 </h2>
                                 <div id="accordionFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias
-                                        exercitationem ab cum
-                                        nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae mollitia
-                                        ipsam quasi
-                                        labore enim architecto non!
+                                        Parce que DoliCloud est une offre ouverte, vous êtes libre de modifier ou
+                                        d'étendre votre instance comme vous voulez. L'ajout de modules externes (comme les modules/extensions trouvés sur www.dolistore.com) peut être un bon moyen d'améliorer
+                                         Dolibarr avec des fonctionnalités non fournies par défaut. Cette page vous explique
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">
+                                        Les EMails envoyés par l'application partent en SPAM?
+                                    </button>
+                                </h2>
+                                <div id="accordionFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Cette FAQ vous donnera des conseils quand vos e-mails, envoyés par votre
+                                         application hébergée, sont reçus dans la boîte de réception SPAM, ou ne sont
+                                          simplement jamais reçu
+                                        (en général éliminés par le système Antispam ou antivirus du destinataire).
                                     </div>
                                 </div>
                             </div>
@@ -908,7 +772,7 @@
                     <div class="text-center col-lg-6 text-lg-start">
                         <h6 class="mb-1 h2 text-primary fw-bold">Prêt à commencer?</h6>
                         <p class="mb-4 fw-medium">Démarrez votre projet avec un essai gratuit de 30 jours</p>
-                        <a href="payment-page.html" class="btn btn-lg btn-primary">Démarrer</a>
+                        <a href="payment-page.html" class="btn btn-lg btn-primary">Installer maintenant</a>
                     </div>
                     <div class="text-center col-lg-6 pt-lg-5 text-lg-end">
                         <img src="assets/img/front-pages/landing-page/cta-dashboard.png" alt="cta dashboard"
@@ -923,10 +787,10 @@
         <section id="landingContact" class="section-py bg-body landing-contact">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <hspan class="badge bg-label-primary">Contact</hspan>
+                    <hspan class="badge bg-label-primary"></hspan>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Travaillons</span> together</h3>
-                <p class="mb-4 text-center mb-lg-5 pb-md-3">Une question ou une remarque ? Une question ou une remarque ? Écrivez-nous simplement un message</p>
+                <h3 class="mb-1 text-center"><span class="section-title">CONTACT</span> </h3>
+                <p class="mb-4 text-center mb-lg-5 pb-md-3">Une question ou une remarque ? Écrivez-nous simplement un message</p>
                 <div class="row gy-4">
                     <div class="col-lg-5">
                         <div class="p-2 border contact-img-box position-relative h-100">
@@ -943,12 +807,12 @@
 
                                             <div>
                                                 <p>Email et Site</p>
-                                                <h5 class="mb-0">
+                                                <p class="mb-0">
                                                     <a href="mailto:Contact@gasikara.mg"
-                                                        class="text-heading">Contact@gasikara.mg<br>
-                                                        https://digital.gasikara.mg</a>
+                                                        class="text-heading">Contact@gasikara.mg
+                                                </a>
 
-                                                </h5>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -959,8 +823,8 @@
                                             </div>
                                             <div>
                                                 <p class="mb-0">Phone</p>
-                                                <h5 class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+261 34
-                                                        93 452 51 <br> +33 6 24 25 07 34 </a></h5>
+                                                <p class="mb-0"><a href="tel:+1234-568-963" class="text-heading">+261 34
+                                                        93 452 51 <br> +33 6 24 25 07 34 </a></p>
                                             </div>
                                         </div>
                                     </div>

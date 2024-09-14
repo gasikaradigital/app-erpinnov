@@ -58,19 +58,17 @@
                     </button>
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" aria-current="page" href="landing-page.html#landingHero">Acceuil</a>
+                            <a class="nav-link fw-medium" aria-current="page" href="#landingHero ">Acceuil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="#landingPricing">Tarif</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingFeatures">Tarif</a>
+                            <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingTeam">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingFAQ">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingContact">Contact</a>
+                            <a class="nav-link fw-medium" href="#landingContact">Contact</a>
                         </li>
                     </ul>
                 </div>

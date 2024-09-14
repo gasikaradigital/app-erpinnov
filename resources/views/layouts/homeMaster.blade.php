@@ -166,7 +166,7 @@
                         </script>
                     </span>
                     <a href="https://pixinvent.com" target="_blank" class="text-white fw-medium footer-link">Pixinvent,</a>
-                    <span class="footer-text"> Fait avec pour ❤️ une meilleure toile.</span>
+                    <span class="footer-text"> </span>
                 </div>
                 <div>
                     <a href="https://github.com/pixinvent" class="footer-link me-3" target="_blank">
