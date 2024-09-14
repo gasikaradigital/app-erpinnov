@@ -40,10 +40,10 @@
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
-        <x-sidebar/>
+        <x-side-admin/>
         <!-- Layout container -->
         <div class="layout-page">
-        <x-nav-bar/>
+        <x-nav-bar-admin/>
         <!-- Content wrapper -->
         <div class="content-wrapper">
             <!-- Sections:Start -->

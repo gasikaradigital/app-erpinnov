@@ -39,16 +39,16 @@
         <!-- Hero: End -->
 
         <!-- Useful features: Start -->
-        <section id="landingFeatures" class="section-py landing-features">
+        <section id="landingFeatures" class="section-py bg-body landing-features">
             <div class="container">
-                <h1 class="pb-1 mb-3 text-center">
-                    <span class="title">Modules</span>
-                </h1>
-                <h5 class="mb-1 text-center">
-                    <p class="title">Découvrez nos modules conçus pour simplifier et optimiser la gestion de votre entreprise. De la gestion des ressources humaines à la productivité, en passant par les ventes et la finance, chaque module est pensé pour répondre à vos besoins. Gagnez du temps et améliorez vos performances avec des outils adaptés et intuitifs..</p>
-                </h5>
+              <div class="pb-1 mb-3 text-center">
+                    <span class="badge bg-label-primary">Useful Features</span>
+                </div>
+                <h3 class="mb-1 text-center">
+                    <span class="section-title">Everything you need</span> to start your next project
+                </h3>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-
+                    Not just a set of tools, the package includes ready-to-deploy conceptual application.
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -106,201 +106,19 @@
         </section>
         <!-- Useful features: End -->
 
-        <!-- Real customers reviews: Start -->
-        <section id="landingReviews" class="pb-0 section-py bg-body landing-reviews">
-            <!-- What people say slider: Start -->
-            <div class="container">
-                <div class="row align-items-center gx-0 gy-4 g-lg-5">
-                    <div class="col-md-6 col-lg-5 col-xl-3">
-                        <div class="pb-1 mb-3">
-                            <span class="badge bg-label-primary"></span>
-                        </div>
-                        <h3 class="mb-1"><span class="section-title">Vous êtes une société (TPE, PME), libéral, micro-entreprise ou association</span></h3>
-                        <p class="mb-3 mb-md-5">
-                            <br class="d-none d-xl-block" />
 
-                        </p>
-                        <div class="landing-reviews-btns">
-                            <button id="reviews-previous-btn" class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
-                                type="button">
-                                <i class="ti ti-chevron-left ti-sm"></i>
-                            </button>
-                            <button id="reviews-next-btn" class="btn btn-label-primary reviews-btn scaleX-n1-rtl"
-                                type="button">
-                                <i class="ti ti-chevron-right ti-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-7 col-xl-9">
-                        <div class="mb-5 overflow-hidden swiper-reviews-carousel pb-md-2 pb-md-3">
-                            <div class="swiper" id="swiper-reviews">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">CRM & Ventes</h3>
-                                                </div>
-                                                <p>
-                                                   Le CRM vous aide à gérer vos clients de manière efficace et personnalisée. Suivez vos interactions, optimisez votre relation client, et boostez vos ventes grâce à des outils performants.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">Marketing</h3>
-                                                </div>
-                                                <p>
-                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">Finance & Facturation</h3>
-                                                </div>
-                                                <p>
-                                                    Optimisez votre gestion d'entreprise avec notre solution intégrée pour la Finance, la Facturation et la Productivité. Gérez vos finances et vos factures avec précision tout en améliorant l'efficacité de vos équipes. Centralisez toutes vos opérations pour un fonctionnement fluide et performant.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">Produit & Stock</h3>
-                                                </div>
-                                                <p>
-                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">Ressources Humaines</h3>
-                                                </div>
-                                                <p>
-                                                    Notre solution RH simplifie la gestion de vos ressources humaines avec des outils intuitifs. Automatisez les processus de recrutement, suivez les performances des employés et optimisez la gestion des congés. Facilitez la gestion de votre équipe et améliorez la satisfaction au travail.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div
-                                                class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <h3 class="title">Marketing</h3>
-                                                </div>
-                                                <p>
-                                                    Notre module Produit vous aide à gérer et optimiser votre catalogue de produits. Suivez les niveaux de stock, mettez à jour les informations produit et analysez les performances. Centralisez toutes les données pour une gestion efficace et informée.
-                                                </p>
-                                                <div class="mb-3 text-warning">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- What people say slider: End -->
-            <hr class="m-0" />
-
-        </section>
-        <!-- Real customers reviews: End -->
 
 
         <!-- Pricing plans: Start -->
-        <section id="landingPricing" class="section-py bg-body landing-pricing">
+        <section id="landingPricing" class="section-py  landing-pricing">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <h1 class="-mt-2title">TARIF</h1>
+                    <span class="badge bg-label-primary">Pricing Plans</span>
                 </div>
-                <h5 class="mb-1 text-center"><span class="">ERPINNOV.COM offre la suite de gestion d'entreprises Dolibarr ERP CRM en ligne, prête pour l'entreprise, les indépendants ou les associations. Son coût reste fixe quelque soit le nombre d'applications de la suite que vous utilisez.</span>
-                </h5>
+                <h3 class="mb-1 text-center"><span class="section-title">Tailored pricing plans</span> designed for you</h3>
                 <p class="pb-3 mb-4 text-center">
-
+                    All plans include 40+ advanced tools and features to boost your product.<br />Choose the best plan to fit
+                    your needs.
                 </p>
                 <div class="mb-5 text-center">
                     <div class="pt-3 position-relative d-inline-block pt-md-0">
@@ -322,7 +140,7 @@
                 </div>
                 <div class="row gy-4 pt-lg-3">
                     <!-- Basic Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="card">
                             <div class="card-header">
                                 <div class="text-center">
@@ -413,87 +231,8 @@
                     </div>
                     <!-- Basic Plan: End -->
 
-                    <!-- Favourite Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="border shadow-lg card border">
-                            <div class="card-header">
-                                <div class="text-center">
-                                    <img src="assets/img/front-pages/icons/plane.png" alt="plane icon" class="pb-2 mb-4" />
-                                    <h4 class="mb-1">Dolibarr Basic</h4>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="mb-0 price-monthly h1 text-primary fw-bold">$29</span>
-                                        <span class="mb-0 price-yearly h1 text-primary fw-bold d-none">$22</span>
-                                        <sub class="mb-0 h6 text-muted ms-1">/mois</sub>
-                                    </div>
-                                    <div class="pt-2 position-relative">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 264 / ans
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Tout en basic
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Chronologie avec base de données
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Tous les modules de Dolibarr (modules officiels - exemples)
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Accessibilité depuis tout accès internet, tout navigateur, tout OS
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Disponibilité 24/7</h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Support technique (par ticket en anglais ou français)
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                                            <span class="p-0 badge badge-center rounded-pill bg-primary me-2"><i
-                                                    class="ti ti-check ti-xs"></i></span>
-                                                    Sauvegardes journalières (30 jours glissant)
-                                        </h5>
-                                    </li>
-                                </ul>
-                                <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-primary">Installer maintenant</a>
-                                </div>
-                                <br>
-                                <p>Test gratuit (30 jours ou plus, sans engagement)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Favourite Plan: End -->
-
                     <!-- Standard Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="card">
                             <div class="card-header">
                                 <div class="text-center">
