@@ -106,9 +106,6 @@
         </section>
         <!-- Useful features: End -->
 
-
-
-
         <!-- Pricing plans: Start -->
         <section id="landingPricing" class="section-py  landing-pricing">
             <div class="container">
