@@ -76,6 +76,7 @@
                   <option value="100">100</option>
                 </select>
               </div>
+              <thead class="table-dark">
             <tr>
               <th>#ID</th>
               <th>Total</th>
@@ -84,6 +85,7 @@
               <th>Statut de la Facture</th>
               <th class="cell-fit">Actions</th>
             </tr>
+        </thead>
           </thead>
           <tbody id="invoiceTable">
             <!-- Dynamic rows will be inserted here by JavaScript -->

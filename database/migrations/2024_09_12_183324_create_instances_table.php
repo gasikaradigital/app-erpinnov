@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('dolibarr_username');
             $table->string('dolibarr_password');
             $table->timestamps();
+            $table->softDeletes();
         });
 
     }
