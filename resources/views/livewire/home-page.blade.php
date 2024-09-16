@@ -42,13 +42,15 @@
         <section id="landingFeatures" class="section-py bg-body landing-features">
             <div class="container">
               <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Useful Features</span>
+                    <span class="badge bg-label-primary">Caractéristiques utiles
+                    </span>
                 </div>
                 <h3 class="mb-1 text-center">
-                    <span class="section-title">Everything you need</span> to start your next project
+                    <span class="section-title">Tout ce dont vous avez besoin</span> pour démarrer votre prochain projet
                 </h3>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-                    Not just a set of tools, the package includes ready-to-deploy conceptual application.
+                    Il ne s’agit pas d’un simple ensemble d’outils, mais d’une application conceptuelle prête à être déployée.
+
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -110,12 +112,12 @@
         <section id="landingPricing" class="section-py  landing-pricing">
             <div class="container">
                 <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Pricing Plans</span>
+                    <span class="badge bg-label-primary">Plan tarif</span>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Tailored pricing plans</span> designed for you</h3>
+                <h3 class="mb-1 text-center"><span class="section-title">Des plans tarifaires sur mesure</span> conçus pour vous</h3>
                 <p class="pb-3 mb-4 text-center">
-                    All plans include 40+ advanced tools and features to boost your product.<br />Choose the best plan to fit
-                    your needs.
+                    Tous les plans incluent 40+ outils et fonctionnalités avancés pour booster votre produit.<br />Choisissez le meilleur plan pour vous adapter
+
                 </p>
                 <div class="mb-5 text-center">
                     <div class="pt-3 position-relative d-inline-block pt-md-0">
