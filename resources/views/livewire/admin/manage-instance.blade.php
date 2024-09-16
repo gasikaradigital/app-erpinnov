@@ -98,3 +98,7 @@
     <!-- Modal -->
     @include('livewire.admin.modal.create-modal-instance')
 </div>
+
+@push('scripts')
+    <script src="{{ asset('assets/js/modal-create-app.js') }}"></script>
+@endpush
