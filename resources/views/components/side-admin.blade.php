@@ -41,53 +41,13 @@
             <span class="menu-header-text" data-i18n="Apps & Pages">Apps &amp; Pages</span>
         </li>
         <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <a href="{{ route('users.liste') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-users"></i>
                 <div data-i18n="Utilisateurs/Clients">Utilisateurs/Clients</div>
             </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="app-user-list.html" class="menu-link">
-                        <div data-i18n="Listes">Listes</div>
-                    </a>
-                </li>
-
-                <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <div data-i18n="Voir">Voir</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="app-user-view-account.html" class="menu-link">
-                                <div data-i18n="Compte">Compte</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="app-user-view-security.html" class="menu-link">
-                                <div data-i18n="Securité">Securité</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="app-user-view-billing.html" class="menu-link">
-                                <div data-i18n="Facturation et forfaits">Facturation et forfaits</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="app-user-view-notifications.html" class="menu-link">
-                                <div data-i18n="Notifications">Notifications</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="app-user-view-connections.html" class="menu-link">
-                                <div data-i18n="Connections">Connections</div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </li>
         <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('instance.gestion') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-id"></i>
                 <div data-i18n="Gestion Instances">Gestion Instances</div>
             </a>
@@ -116,7 +76,7 @@
                 </li>
             </ul>
         </li>
-        @can('admin')
+        @can('superadmin')
         <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-settings"></i>

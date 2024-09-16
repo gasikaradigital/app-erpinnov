@@ -30,10 +30,17 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/typeahead-js/typeahead.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/@form-validation/umd/styles/index.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/libs/animate-css/animate.css') }}">
 
-    <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
     <script src="{{ asset('assets/js/config.js') }}"></script>
+    @stack('styles')
 </head>
 <body>
 
@@ -49,30 +56,7 @@
             <!-- Sections:Start -->
             {{ $slot }}
             <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-                <div class="container-xxl">
-                    <div class="py-2 footer-container d-flex align-items-center justify-content-between flex-md-row flex-column">
-                        <div>
-                            ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            , made with ❤️ by <a href="https://pixinvent.com" target="_blank" class="fw-medium">Pixinvent</a>
-                        </div>
-                        <div class="d-none d-lg-inline-block">
-                            <a href="https://themeforest.net/licenses/standard" class="footer-link me-4" target="_blank">License</a>
-                            <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" class="footer-link me-4">More
-                                Themes</a>
-
-                            <a href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/" target="_blank"
-                                class="footer-link me-4">Documentation</a>
-
-                            <a href="https://pixinvent.ticksy.com/" target="_blank"
-                                class="footer-link d-none d-sm-inline-block">Support</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            @include('layouts.partials.footer-admin')
             <!-- / Footer -->
             <div class="content-backdrop fade"></div>
         </div>
@@ -95,17 +79,27 @@
 <script src="{{ asset('assets/vendor/libs/i18n/i18n.js') }}"></script>
 <script src="{{ asset('assets/vendor/libs/typeahead-js/typeahead.js') }}"></script>
 <script src="{{ asset('assets/vendor/js/menu.js') }}"></script>
-
 <!-- endbuild -->
-
 <!-- Vendors JS -->
 <script src="{{ asset('assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
-
+<script src="{{ asset('assets/vendor/libs/moment/moment.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/select2/select2.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/umd/bundle/popular.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/cleavejs/cleave.js') }}"></script>
+<script src="{{ asset('assets/vendor/libs/cleavejs/cleave-phone.js') }}"></script>
 <!-- Main JS -->
 <script src="{{ asset('assets/js/main.js') }}"></script>
-
 <!-- Page JS -->
 <script src="{{ asset('assets/js/dashboards-crm.js') }}"></script>
-</body>
+<script src="{{ asset('assets/js/app-user-list.js') }}"></script>
+<script src="{{ asset('assets/js/tables-datatables-basic.js') }}"></script>
+<script src="{{ asset('assets/js/modal-create-app.js') }}"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<x-livewire-alert::scripts />
 
+@stack('scripts')
+</body>
 </html>

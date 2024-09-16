@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/@form-validation/umd/styles/index.min.css') }}" />
 
+    <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/page-user-view.css') }}" />
+
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
     <script src="{{ asset('assets/js/config.js') }}"></script>
@@ -65,7 +67,7 @@
                     <!--/ Content -->
 
                     <!-- Footer -->
-                    @include('layouts.partials.footer')
+                    @include('layouts.partials.footer-client')
                     <!-- / Footer -->
 
                     <div class="content-backdrop fade"></div>
@@ -109,5 +111,12 @@
 
 <script src="{{ asset('assets/js/app-logistics-dashboard.js') }}"></script>
 <script src="{{ asset('assets/js/wizard-ex-create-deal.js') }}"></script>
+
+<script src="{{ asset('assets/js/modal-edit-user.js') }}"></script>
+<script src="{{ asset('assets/js/app-user-view.js') }}"></script>
+<script src="{{ asset('assets/js/app-user-view-account.js') }}"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<x-livewire-alert::scripts />
 </body>
 </html>

@@ -1,10 +1,13 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\Admin\Users;
+use App\Livewire\Admin\DetailUser;
 use App\Livewire\Client\HomeClient;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Admin\HomeSuperAdmin;
+use App\Livewire\Admin\ManageInstance;
 use App\Livewire\Client\FactureClient;
 use App\Livewire\Client\InstanceListes;
 use App\Livewire\Client\CreateInstances;
@@ -39,6 +42,10 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::middleware(['role:superadmin|manager'])->prefix('fulladmin')->group(function () {
 
         Route::get('/', HomeSuperAdmin::class)->name('superAdmin');
+        Route::get('/users-liste', Users::class)->name('users.liste');
+        Route::get('/detail-user/{id}', DetailUser::class)->name('users.detail');
+
+        Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
 
     });
 
