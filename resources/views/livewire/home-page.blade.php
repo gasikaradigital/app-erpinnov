@@ -15,7 +15,7 @@
                             <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">Rejoignez la communauté
                                 <img src="assets/img/front-pages/icons/Join-community-arrow.png" alt="Join community arrow"
                                     class="scaleX-n1-rtl" /></span>
-                            <a href="/login" class="btn btn-primary btn-lg">Je tester gratuitement</a>
+                            <a href="/login" class="btn btn-primary btn-lg" target="_blank">Je tester gratuitement</a>
                         </div>
                     </div>
                     <div id="heroDashboardAnimation" class="hero-animation-img">
@@ -42,14 +42,14 @@
         <section id="landingFeatures" class="section-py bg-body landing-features">
             <div class="container">
               <div class="pb-1 mb-3 text-center">
-                    <span class="badge bg-label-primary">Caractéristiques utiles
+                    <span class="badge bg-label-primary">Modules
                     </span>
                 </div>
                 <h3 class="mb-1 text-center">
-                    <span class="section-title">Tout ce dont vous avez besoin</span> pour démarrer votre prochain projet
+                    <span class="section-title">Découvrez nos modules</span> conçus pour simplifier et optimiser la gestion de votre entreprise.
                 </h3>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-                    Il ne s’agit pas d’un simple ensemble d’outils, mais d’une application conceptuelle prête à être déployée.
+                    De la gestion des ressources humaines à la productivité, en passant par les ventes et la finance, chaque module est pensé pour répondre à vos besoins. Gagnez du temps et améliorez vos performances avec des outils adaptés et intuitifs..
 
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
@@ -59,7 +59,7 @@
                         </div>
                         <h4><a href="#">CRM & Ventes</a></h4>
                         <p class="features-icon-description">
-                            Le module CRM & Ventes permet de gérer les prospects, clients, opportunités, devis, commandes, contrats, abonnements, et les services d'assistance/tickets.
+                            Le CRM vous aide à gérer vos clients de manière efficace et personnalisée.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -68,7 +68,7 @@
                         </div>
                         <h4><a href="#">Marketing</a></h4>
                         <p class="features-icon-description">
-                            Boostez votre stratégie Marketing avec des outils performants pour Emailing et Enquêtes. Engagez vos clients efficacement et mesurez l’impact de vos actions.
+                            Boostez votre stratégie Marketing avec des outils performants.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -77,7 +77,7 @@
                         </div>
                         <h4><a href="#">Finance & Facturation</a></h4>
                         <p class="features-icon-description">
-                            Optimisez votre gestion financière, Paiements et Rapprochement bancaire. Simplifiez votre Comptabilité à double entrée pour une maîtrise complète de vos finances.
+                            Optimisez votre gestion financière, Paiements et Rapprochement bancaire.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -86,7 +86,7 @@
                         </div>
                         <h4><a href="#">Produit & Stock</a></h4>
                         <p class="features-icon-description">
-                            Gérez efficacement vos Produits, Services, Stocks, Achats, et Expéditions. Optimisez votre chaîne d’approvisionnement et la Fabrication pour une performance accrue.
+                            Gérez efficacement vos Produits, Services, Stocks, Achats, et Expéditions.
                         </p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -94,14 +94,14 @@
                             <img src="assets/img/front-pages/icons/user.png" alt="lifebelt" />
                         </div>
                         <h4><a href="#">Ressources Humaines</a></h4>
-                        <p class="features-icon-description">Le module Ressources Humaines gère les employés, les notes de frais, les demandes de congé, les feuilles de temps, le recrutement et la gestion des compétences.</p>
+                        <p class="features-icon-description">Notre solution simplifie la gestion de vos RH avec des outils intuitifs.</p>
                     </div>
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
                         <div class="mb-3 text-center">
                             <img src="assets/img/front-pages/icons/keyboard.png" alt="google docs" />
                         </div>
                         <h4><a href="#">Productivité</a></h4>
-                        <p class="features-icon-description">Améliorez votre Productivité en gérant efficacement Projets, Tâches, et Interventions. Planifiez votre Agenda et suivez vos activités en un seul endroit.</p>
+                        <p class="features-icon-description">Améliorez votre Productivité en gérant efficacement Projets et Tâches.</p>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                 </div>
                 <h3 class="mb-1 text-center"><span class="section-title">Des plans tarifaires sur mesure</span> conçus pour vous</h3>
                 <p class="pb-3 mb-4 text-center">
-                    Tous les plans incluent 40+ outils et fonctionnalités avancés pour booster votre produit.<br />Choisissez le meilleur plan pour vous adapter
+                    ERPINNOV.COM offre la suite de gestion d'entreprises Dolibarr ERP CRM en ligne, prête pour l'entreprise, les indépendants ou les associations. Son coût reste fixe quelque soit le nombre d'applications de la suite que vous utilisez.
 
                 </p>
                 <div class="mb-5 text-center">
@@ -221,7 +221,7 @@
                                     </li>
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Installer maintenant</a>
+                                    <a href="/login" target="_blank" class="btn btn-label-primary">Installer maintenant</a>
                                 </div>
                                 <br>
                                 <p>Test gratuit (30 jours ou plus, sans engagement)</p>
@@ -307,7 +307,7 @@
 
                                 </ul>
                                 <div class="pt-3 mt-4 d-grid">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Installer maintenant</a>
+                                    <a href="/login" target="_blank" class="btn btn-label-primary">Installer maintenant</a>
                                 </div>
                                 <br>
                                 <p>Test gratuit (30 jours ou plus, sans engagement)</p>
@@ -509,8 +509,40 @@
                 <div class="row align-items-center gy-5 gy-lg-0">
                     <div class="text-center col-lg-6 text-lg-start">
                         <h6 class="mb-1 h2 text-primary fw-bold">Prêt à commencer?</h6>
-                        <p class="mb-4 fw-medium">Démarrez votre projet avec un essai gratuit de 30 jours</p>
-                        <a href="payment-page.html" class="btn btn-lg btn-primary">Installer maintenant</a>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5>
+                                    <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                            class="ti ti-check ti-xs"></i></span>
+                                            Démarrez votre projet avec un essai gratuit de 30 jours
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                            class="ti ti-check ti-xs"></i></span>
+                                            Le logiciel Open Source Dolibarr
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                            class="ti ti-check ti-xs"></i></span>
+                                            Tous les services du SaaS dans un Cloud souverain
+                                </h5>
+                            </li>
+
+                            <li>
+                                <h5>
+                                    <span class="p-0 badge badge-center rounded-pill bg-label-primary me-2"><i
+                                            class="ti ti-check ti-xs"></i></span>
+                                            La liberté d'accès/modification du SaaS
+                                </h5>
+                            </li>
+
+                        </ul>
+
+                        <a href="/login" target="_blank" class="btn btn-lg btn-primary">Installer maintenant</a>
                     </div>
                     <div class="text-center col-lg-6 pt-lg-5 text-lg-end">
                         <img src="assets/img/front-pages/landing-page/cta-dashboard.png" alt="cta dashboard"
@@ -568,9 +600,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3>Address</h3>
-                            <p>Plateau de tombe, Mahajanga ville 401 Madagascar
-                            </p>
+
                         </div>
 
 

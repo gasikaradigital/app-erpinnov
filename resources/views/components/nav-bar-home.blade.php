@@ -11,7 +11,7 @@
                     <i class="align-middle ti ti-menu-2 ti-sm"></i>
                 </button>
                 <!-- Mobile menu toggle: End-->
-                <a href="landing-page.html" class="app-brand-link">
+                <a href="" class="app-brand-link">
                     <span class="app-brand-text demo menu-text fw-bold ms-1 ps-1"
                         style="font-size: 1.5rem">Erp Innov</span>
                 </a>
@@ -71,7 +71,7 @@
 
                 <!-- navbar button: Start -->
                 <li>
-                    <a href="/login" class="btn btn-primary">
+                    <a href="/login" class="btn btn-primary" target="_blank">
                         <span class="tf-icons ti ti-user scaleX-n1-rtl me-md-1"></span>
                         <span class="d-none d-md-block">Votre Espace Client</span>
                     </a>
