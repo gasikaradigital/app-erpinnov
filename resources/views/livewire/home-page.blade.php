@@ -46,11 +46,11 @@
                     </span>
                 </div>
                 <h3 class="mb-1 text-center">
-                    <span class="section-title">Découvrez nos modules</span> conçus pour simplifier et optimiser la gestion de votre entreprise.
+                   <span class="section-title">Nos modules</span>
+                pour simplifier votre gestion.
                 </h3>
                 <p class="pb-3 mb-3 text-center mb-md-5">
-                    De la gestion des ressources humaines à la productivité, en passant par les ventes et la finance, chaque module est pensé pour répondre à vos besoins. Gagnez du temps et améliorez vos performances avec des outils adaptés et intuitifs..
-
+                    Des outils adaptés pour gagner du temps et répondre à vos besoins.
                 </p>
                 <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
                     <div class="text-center col-lg-4 col-sm-6 features-icon-box">
@@ -114,10 +114,9 @@
                 <div class="pb-1 mb-3 text-center">
                     <span class="badge bg-label-primary">Plan tarif</span>
                 </div>
-                <h3 class="mb-1 text-center"><span class="section-title">Des plans tarifaires sur mesure</span> conçus pour vous</h3>
+               <h3 class="mb-1 text-center"><span class="section-title">Plans tarifaires sur mesure</span></h3>
                 <p class="pb-3 mb-4 text-center">
-                    ERPINNOV.COM offre la suite de gestion d'entreprises Dolibarr ERP CRM en ligne, prête pour l'entreprise, les indépendants ou les associations. Son coût reste fixe quelque soit le nombre d'applications de la suite que vous utilisez.
-
+                    ERPINNOV propose Dolibarr ERP CRM en ligne, avec un coût fixe, peu importe les applications utilisées.
                 </p>
                 <div class="mb-5 text-center">
                     <div class="pt-3 position-relative d-inline-block pt-md-0">

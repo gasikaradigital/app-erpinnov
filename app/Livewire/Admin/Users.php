@@ -14,7 +14,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Users extends Component
 {
     use WithPagination, LivewireAlert, AuthorizesRequests;
-
+    protected $paginationTheme = 'bootstrap';
     public $name;
     public $email;
     public $password;

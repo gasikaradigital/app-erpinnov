@@ -71,7 +71,7 @@
 
                 <!-- navbar button: Start -->
                 <li>
-                    <a href="/login" class="btn btn-primary" target="_blank">
+                    <a href="/login" class="btn btn-primary">
                         <span class="tf-icons ti ti-user scaleX-n1-rtl me-md-1"></span>
                         <span class="d-none d-md-block">Votre Espace Client</span>
                     </a>

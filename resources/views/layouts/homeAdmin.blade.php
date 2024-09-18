@@ -96,7 +96,8 @@
 <script src="{{ asset('assets/js/dashboards-crm.js') }}"></script>
 <script src="{{ asset('assets/js/app-user-list.js') }}"></script>
 <script src="{{ asset('assets/js/tables-datatables-basic.js') }}"></script>
-
+<script src="{{ asset('assets/js/app-access-roles.js') }}"></script>
+<script src="{{ asset('assets/js/modal-add-role.js') }}"></script>
 
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

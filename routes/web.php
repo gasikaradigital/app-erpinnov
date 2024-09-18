@@ -2,6 +2,7 @@
 
 use App\Livewire\HomePage;
 use App\Livewire\Admin\Users;
+use App\Livewire\Guard\Roles;
 use App\Livewire\Admin\DetailUser;
 use App\Livewire\Client\HomeClient;
 use Illuminate\Support\Facades\Auth;
@@ -46,7 +47,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::get('/detail-user/{id}', DetailUser::class)->name('users.detail');
 
         Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
-
+        Route::get('/roles', Roles::class)->name('roles.liste');
     });
 
 

@@ -5,8 +5,8 @@
             <div class="modal-body p-2">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="text-center">
-                    <h3 class="mb-2">Create App</h3>
-                    <p>Provide data with this form to create your app.</p>
+                    <h3 class="mb-2">Créer instance</h3>
+                    <p>Fournissez des données avec ce formulaire pour créer instance.</p>
                 </div>
                 <div id="wizard-create-app" class="bs-stepper vertical mt-2 shadow-none">
                     <div class="bs-stepper-content p-1">
@@ -14,10 +14,10 @@
                             <!-- Details -->
                             <div id="details" class="content pt-3 pt-lg-0">
                                 <div class="mb-3">
-                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                                        placeholder="Application Name" />
+                                    <input type="text" class="form-control form-control-lg" id="name_instance"
+                                        placeholder="Nom d'instance" />
                                 </div>
-                                <h5>Category</h5>
+                                <h5>Catégorie</h5>
                                 <ul class="p-0 m-0">
                                     <li class="d-flex align-items-start mb-3">
                                         <div class="badge bg-label-info p-2 me-3 rounded">
@@ -26,7 +26,7 @@
                                         <div class="d-flex justify-content-between w-100">
                                             <div class="me-2">
                                                 <h6 class="mb-0">CRM Application</h6>
-                                                <small class="text-muted">Scales with any business</small>
+                                                <small class="text-muted">S'adapte à toutes les entreprises</small>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <div class="form-check form-check-inline">
@@ -43,7 +43,7 @@
                                         <div class="d-flex justify-content-between w-100">
                                             <div class="me-2">
                                                 <h6 class="mb-0">eCommerce Platforms</h6>
-                                                <small class="text-muted">Grow Your Business With App</small>
+                                                <small class="text-muted">Développez votre entreprise</small>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <div class="form-check form-check-inline">
@@ -60,7 +60,7 @@
                                         <div class="d-flex justify-content-between w-100">
                                             <div class="me-2">
                                                 <h6 class="mb-0">Online Learning platform</h6>
-                                                <small class="text-muted">Start learning today</small>
+                                                <small class="text-muted">Commencez à apprendre aujourd'hui</small>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <div class="form-check form-check-inline">
