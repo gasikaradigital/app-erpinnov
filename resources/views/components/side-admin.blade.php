@@ -49,11 +49,11 @@
         <li class="menu-item">
             <a href="{{ route('instance.gestion') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-id"></i>
-                <div data-i18n="Gestion Instances">Gestion Instances</div>
+                <div data-i18n="Gestion Instances">Gestion Instance</div>
             </a>
         </li>
         <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('abonnement.gestion') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-layout-navbar"></i>
                 <div data-i18n="Gestion Abonnements">Gestion Abonnements</div>
             </a>

@@ -61,7 +61,7 @@
             <div class="content-backdrop fade"></div>
         </div>
         </div>
-        <!-- / Layout page -->
+        <!-- /Layout page -->
     </div>
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
@@ -99,6 +99,7 @@
 <script src="{{ asset('assets/js/app-access-roles.js') }}"></script>
 <script src="{{ asset('assets/js/modal-add-role.js') }}"></script>
 
+<script src="{{ asset('assets/js/extended-ui-sweetalert2.js') }}"></script>
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <x-livewire-alert::scripts />

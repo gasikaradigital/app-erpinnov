@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Admin\HomeSuperAdmin;
 use App\Livewire\Admin\ManageInstance;
+use App\Livewire\Admin\ManageAbonnement;
 use App\Livewire\Client\FactureClient;
 use App\Livewire\Client\InstanceListes;
 use App\Livewire\Client\CreateInstances;
@@ -48,6 +49,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
         Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
         Route::get('/roles', Roles::class)->name('roles.liste');
+
+        Route::get('/gestion-abonnement', ManageAbonnement::class)->name('abonnement.gestion');
     });
 
 

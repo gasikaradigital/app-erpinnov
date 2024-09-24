@@ -6,7 +6,7 @@
 
         {{-- others component --}}
     </div>
-<!-- / Content -->
+<!-- / Content-->
 @else
 <h1>Hey Manager</h1>
 @endcan
