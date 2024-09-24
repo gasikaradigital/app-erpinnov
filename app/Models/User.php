@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Models\Role;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -22,7 +21,9 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
     use HasRoles;
     use SoftDeletes;
+
     protected $dates = ['deleted_at'];
+
     /**
      * The attributes that are mass assignable.
      *
@@ -32,7 +33,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'email_verified_at'
+        'email_verified_at',
+        'is_active',
     ];
 
     /**
@@ -66,20 +68,65 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_active' => 'boolean'
         ];
     }
 
-
-    // Relation avec le modèle Subscription (Un utilisateur peut avoir plusieurs abonnements)
-    public function subscriptions()
+    protected static function booted()
     {
-        return $this->hasMany(Subscription::class);
+        static::created(function ($user) {
+            $freePlan = Plan::where('is_free', true)->where('is_default', true)->first();
+            if ($freePlan) {
+                Subscription::create([
+                    'user_id' => $user->id,
+                    'plan_id' => $freePlan->id,
+                    'start_date' => now(),
+                    'end_date' => now()->addDays($freePlan->duration_days),
+                    'status' => 'active'
+                ]);
+            }
+        });
     }
 
-    // Relation avec le modèle Instance (Un utilisateur peut créer plusieurs instances Dolibarr)
     public function instances()
     {
         return $this->hasMany(Instance::class);
     }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
+
+    public function activeSubscription()
+    {
+        return $this->subscriptions()->where('status', 'active')->first();
+    }
+
+    public function activePlan()
+    {
+        $activeSubscription = $this->activeSubscription();
+        return $activeSubscription ? $activeSubscription->plan : null;
+    }
+
+    public function canCreateInstance()
+    {
+        $activePlan = $this->activePlan();
+        if (!$activePlan) {
+            return false;
+        }
+        return $activePlan->instance_limit === null || $this->instances()->count() < $activePlan->instance_limit;
+    }
+
+    public function remainingInstances()
+    {
+        $activePlan = $this->activePlan();
+        if (!$activePlan) {
+            return 0;
+        }
+        if ($activePlan->instance_limit === null) {
+            return 'Illimité';
+        }
+        return max(0, $activePlan->instance_limit - $this->instances()->count());
+    }
 }

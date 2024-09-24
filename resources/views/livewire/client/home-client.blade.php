@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+<div class="container-fluid py-4">
+    @include('livewire.client.dashboard')
+
+    <div class="mt-4">
+        <livewire:client.subscription-plans />
+    </div>
+
+    <div class="mt-4">
+=======
 <div>
     <div class="container-xxl flex-grow-1 container-p-y">
         {{-- <h4 class="py-3 mb-4">Tableau de bord</h4> --}}
@@ -67,6 +77,7 @@
             </div>
         </div>
         <!--/ Card Border Shadow -->
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
         <livewire:client.instance-listes />
     </div>
 </div>

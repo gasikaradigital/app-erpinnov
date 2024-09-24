@@ -34,7 +34,11 @@
                         <tr>
                             <th>Nom d'utilisateur</th>
                             <th>Email</th>
+<<<<<<< HEAD
+                            <th>Date création</th>
+=======
                             <th>Date cr茅ation</th>
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -52,7 +56,11 @@
                                     <div class="d-flex flex-column">
                                         <span class="emp_name text-truncate">{{ $user->name }}</span>
                                         <small class="emp_post text-truncate text-muted">
+<<<<<<< HEAD
+                                            {{ $user->roles->first()->label ?? 'Aucun rôle' }}
+=======
                                             {{ $user->roles->first()->label ?? 'Aucun r么le' }}
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
                                         </small>
                                     </div>
                                 </div>
@@ -61,7 +69,11 @@
                             <td>{{ $user->created_at->format('d/m/Y') }}</td>
                             <td>
                                 <span class="badge bg-label-{{ $user->roles->isNotEmpty() ? 'success' : 'warning' }}">
+<<<<<<< HEAD
+                                    {{ $user->roles->first()->label ?? 'Aucun rôle' }}
+=======
                                     {{ $user->roles->first()->label ?? 'Aucun r么le' }}
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
                                 </span>
                             </td>
                             <td>

@@ -369,5 +369,25 @@
     "You may delete any of your existing tokens if they are no longer needed.": "Vous pouvez supprimer n'importe lequel de vos jetons existants s'ils ne sont plus nécessaires.",
     "You may not delete your personal team.": "Vous ne pouvez pas supprimer votre équipe personnelle.",
     "You may not leave a team that you created.": "Vous ne pouvez pas quitter une équipe que vous avez créée.",
+<<<<<<< HEAD
+    "Your email address is unverified.": "Votre adresse e-mail n'est pas vérifiée.",
+    "myinstances": "Mes instances",
+    "refrence": "Référence",
+    "nom_instance": "Nom instance",
+    "view_url": "Accéder",
+    "module": "Modules",
+    "statut": "Statut",
+    "cctions": "Actions",
+    "subscribe": "Souscrire",
+    "view_detail": "Voir les Détails",
+    "delete": "Supprimer",
+    "null_instance_dispobile": "Aucune instance disponible pour le moment.",
+    "menu_action": "Menu des actions",
+    "instance_payante" : "Instances abonnées",
+    "instance_active" : "Instances actives",
+    "instance_expired" : "Instances suspendues",
+    "instance_total_limit" : "Total instances / Limite"
+=======
     "Your email address is unverified.": "Votre adresse e-mail n'est pas vérifiée."
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 }

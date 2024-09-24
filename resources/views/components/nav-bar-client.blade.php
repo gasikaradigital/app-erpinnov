@@ -34,7 +34,11 @@
 
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
+<<<<<<< HEAD
+                <!-- Language 
+=======
                 <!-- Language -->
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
                 <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-language rounded-circle ti-md"></i>
@@ -53,9 +57,15 @@
                         </li>
                     </ul>
                 </li>
+<<<<<<< HEAD
+                 Language -->
+
+                <!-- Style Switcher 
+=======
                 <!--/ Language -->
 
                 <!-- Style Switcher -->
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
                 <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-md"></i>
@@ -78,7 +88,11 @@
                         </li>
                     </ul>
                 </li>
+<<<<<<< HEAD
+                 Style Switcher-->
+=======
                 <!-- / Style Switcher-->
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 
                 <!-- Notification -->
                 <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
