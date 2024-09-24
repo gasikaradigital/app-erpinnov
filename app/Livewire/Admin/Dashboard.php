@@ -2,13 +2,17 @@
 
 namespace App\Livewire\Admin;
 
+<<<<<<< HEAD
 use App\Models\User;
+=======
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 use Livewire\Component;
 
 class Dashboard extends Component
 {
     public function render()
     {
+<<<<<<< HEAD
         $clientCount = User::query()
             ->whereHas('roles', function ($query) {
                 $query->where('name', 'client');
@@ -35,5 +39,8 @@ class Dashboard extends Component
             'clientCount'  => $clientCount,
             'clientPaidCount' => $clientPaidCount,
         ]);
+=======
+        return view('livewire.admin.dashboard');
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     }
 }

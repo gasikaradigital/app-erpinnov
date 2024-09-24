@@ -23,15 +23,34 @@ class User extends Authenticatable
     use HasRoles;
     use SoftDeletes;
     protected $dates = ['deleted_at'];
+<<<<<<< HEAD
 
+=======
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     protected $fillable = [
         'name',
         'email',
         'password',
+<<<<<<< HEAD
         'email_verified_at',
         'is_active',
     ];
 
+=======
+        'email_verified_at'
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     protected $hidden = [
         'password',
         'remember_token',
@@ -39,15 +58,32 @@ class User extends Authenticatable
         'two_factor_secret',
     ];
 
+<<<<<<< HEAD
+=======
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array<int, string>
+     */
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     protected $appends = [
         'profile_photo_url',
     ];
 
+<<<<<<< HEAD
+=======
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     protected function casts(): array
     {
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+<<<<<<< HEAD
             'is_active' => 'boolean'
         ];
     }
@@ -73,11 +109,19 @@ class User extends Authenticatable
         return $this->hasMany(Instance::class);
     }
 
+=======
+        ];
+    }
+
+
+    // Relation avec le modèle Subscription (Un utilisateur peut avoir plusieurs abonnements)
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     public function subscriptions()
     {
         return $this->hasMany(Subscription::class);
     }
 
+<<<<<<< HEAD
     public function activeSubscription()
     {
         return $this->subscriptions()->where('status', 'active')->first();
@@ -108,6 +152,12 @@ class User extends Authenticatable
             return 'Illimité';
         }
         return max(0, $activePlan->instance_limit - $this->instances()->count());
+=======
+    // Relation avec le modèle Instance (Un utilisateur peut créer plusieurs instances Dolibarr)
+    public function instances()
+    {
+        return $this->hasMany(Instance::class);
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     }
 
 }

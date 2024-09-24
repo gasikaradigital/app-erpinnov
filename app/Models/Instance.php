@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 use App\Models\Subscription;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -25,22 +26,50 @@ class Instance extends Model
         'subscription_id',
         'expiration_date',
         'token_expires_at',
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Instance extends Model
+{
+    use HasFactory;
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+    protected $fillable = [
+        'user_id',
+        'reference',
+        'name_instance',
+        'url',
+        'status',
+        'type',
+        'expiration_date',
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
         'dolibarr_username',
         'dolibarr_password',
         'auth_token',
     ];
 
     protected $hidden = ['auth_token', 'dolibarr_password'];
+<<<<<<< HEAD
 
     protected $casts = [
         'expiration_date' => 'datetime',
         'token_expires_at' => 'datetime',
     ];
 
+=======
+    protected $casts = [
+        'expiration_date' => 'datetime',
+    ];
+
+    // Relation avec l'utilisateur
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     public function user()
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
     
     public function subscription()
     {
@@ -106,3 +135,14 @@ class Instance extends Model
         return $query->where('status', self::STATUS_ACTIVE);
     }
 }
+=======
+
+
+        public function isActive()
+    {
+        return $this->status === 'active';
+    }
+
+}
+
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c

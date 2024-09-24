@@ -6,13 +6,17 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+<<<<<<< HEAD
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use Illuminate\Support\Facades\DB;
+=======
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 
 class Roles extends Component
 {
     use WithPagination, LivewireAlert, AuthorizesRequests;
+<<<<<<< HEAD
 
     protected $paginationTheme = 'bootstrap';
 
@@ -112,3 +116,12 @@ class Roles extends Component
     }
 }
 
+=======
+    protected $paginationTheme = 'bootstrap';
+
+    public function render()
+    {
+        return view('livewire.guard.roles');
+    }
+}
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c

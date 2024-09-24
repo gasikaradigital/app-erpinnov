@@ -2,16 +2,23 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use App\Models\PermissionModule;
 use Spatie\Permission\Models\Permission;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+=======
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Spatie\Permission\Models\Permission;
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 
 class PermissionSeeder extends Seeder
 {
     public function run()
     {
+<<<<<<< HEAD
         $modules = [
             'Dashboard Management' => [
                 'fr' => 'Gestion dashboard',
@@ -58,6 +65,33 @@ class PermissionSeeder extends Seeder
                     'guard_name' => 'web',
                 ]);
             }
+=======
+        $permissions = [
+            'superadmin',
+            'manager',
+            'client'
+        ];
+
+        $label_permissions = [
+            'Super Admin',
+            'Manager',
+            'Client',
+        ];
+
+        $descriptions_permissions = [
+            'Plein administrateur controler tous',
+            'Manager juste controle et contribuer avec super admin',
+            'Client pour faire des testes et abonnement'
+        ];
+
+        // Loop through the permissions and create them using Spatie
+        foreach ($permissions as $key => $permissionName) {
+            Permission::create([
+                'name' => $permissionName,
+                'label' => $label_permissions[$key],
+                'description' => $descriptions_permissions[$key],
+            ]);
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
         }
     }
 }

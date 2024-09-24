@@ -156,5 +156,9 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'pagination_theme' => 'bootstrap',
+=======
+    'pagination_theme' => 'tailwind',
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 ];

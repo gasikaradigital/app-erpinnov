@@ -3,6 +3,7 @@
 namespace App\Livewire\Client;
 
 use Livewire\Component;
+<<<<<<< HEAD
 use App\Models\Instance;
 use App\Models\Subscription;
 use App\Models\Plan;
@@ -84,5 +85,13 @@ class HomeClient extends Component
             'plans' => Plan::all(),
             'subscriptionPlans' => new SubscriptionPlans(),
         ])->layout('layouts.homeClient');
+=======
+
+class HomeClient extends Component
+{
+    public function render()
+    {
+        return view('livewire.client.home-client')->layout('layouts.homeClient');
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     }
 }

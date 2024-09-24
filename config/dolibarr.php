@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 return [
     'domain_suffix' => env('DOLIBARR_DOMAIN_SUFFIX', '.base.erpinnov.com'),
@@ -20,3 +21,10 @@ return [
 ];
 
 
+=======
+return [
+    'source_path' => 'C:\laragon\www\dolibarr',
+    'instances_path' => 'C:\laragon\www\instances',
+    'source_db' => 'dolibarr',
+];
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c

@@ -3,6 +3,7 @@
 namespace App\Livewire\Client;
 
 use Livewire\Component;
+<<<<<<< HEAD
 use App\Models\Instance;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Auth;
@@ -86,5 +87,14 @@ class InstanceListes extends Component
                 ->latest()
                 ->simplePaginate($this->page),
         ]);
+=======
+
+
+class InstanceListes extends Component
+{
+    public function render()
+    {
+        return view('livewire.client.instance-listes');
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     }
 }

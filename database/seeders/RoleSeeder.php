@@ -10,6 +10,7 @@ class RoleSeeder extends Seeder
 {
     public function run(): void
     {
+<<<<<<< HEAD
         $roles = [
             'superadmin' => [
                 'label' => 'Administrateur complet',
@@ -55,5 +56,32 @@ class RoleSeeder extends Seeder
                 $role->givePermissionTo($permissions);
             }
         }
+=======
+        $superadmin = Role::create([
+            'name' => 'superadmin',
+            'label' => 'Administrateur complet',
+            'description' => 'Administrateur de Système'
+        ]);
+        $manager = Role::create([
+            'name' => 'manager',
+            'label' => 'Manager contributeur',
+            'description' => 'Manager contributeur/aide'
+        ]);
+        $client = Role::create([
+            'name' => 'client',
+            'label' => 'Client',
+            'description' => 'Client erp'
+        ]);
+        $superadmin->givePermissionTo([
+            'superadmin',
+        ]);
+
+        $manager->givePermissionTo([
+            'manager',
+        ]);
+        $client->givePermissionTo([
+            'client',
+        ]);
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     }
 }

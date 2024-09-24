@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             RoleSeeder::class,
             UsersSeeder::class,
+<<<<<<< HEAD
             PlansTableSeeder::class,
+=======
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
         ]);
 
         // User::factory(10)->create();

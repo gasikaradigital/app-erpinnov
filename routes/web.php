@@ -12,7 +12,11 @@ use App\Livewire\Admin\ManageInstance;
 use App\Livewire\Client\FactureClient;
 use App\Livewire\Client\InstanceListes;
 use App\Livewire\Client\CreateInstances;
+<<<<<<< HEAD
 use App\Livewire\Guard\Permissions;
+=======
+
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
 
 Route::get('/', HomePage::class)->name('homepage');
 
@@ -48,7 +52,10 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
         Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
         Route::get('/roles', Roles::class)->name('roles.liste');
+<<<<<<< HEAD
         Route::get('/permissions', Permissions::class)->name('permissions.liste');
+=======
+>>>>>>> 4888495f40227bc0ff0c15f5a63645a0928b448c
     });
 
 
