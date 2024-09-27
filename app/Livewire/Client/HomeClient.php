@@ -2,87 +2,99 @@
 
 namespace App\Livewire\Client;
 
+use Carbon\Carbon;
+use App\Models\Plan;
 use Livewire\Component;
 use App\Models\Instance;
+use Livewire\Attributes\On;
 use App\Models\Subscription;
-use App\Models\Plan;
-use Illuminate\Support\Facades\Auth;
 use Livewire\WithPagination;
+use Illuminate\Support\Facades\Auth;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class HomeClient extends Component
 {
     use WithPagination, LivewireAlert;
 
-    public $paidInstancesCount;
-    public $activeInstancesCount;
-    public $expiredInstancesCount;
-    public $totalInstancesCount;
+    public $user;
     public $currentPlan;
-    public $remainingInstances;
-
-    protected $listeners = ['planChanged' => 'loadStatistics'];
+    public $statistics;
+    public $subscriptionEndDate;
+    public $daysRemaining;
+    public $percentageDaysUsed;
+    public $daysUsed;
+    public $totalDays;
 
     public function mount()
     {
+        $this->user = Auth::user();
+        $this->currentPlan = $this->user->activePlan();
         $this->loadStatistics();
+        $this->loadSubscriptionInfo();
     }
 
-    public function loadStatistics()
+    private function loadStatistics()
     {
-        $user = Auth::user();
-        $userInstances = $user->instances();
+        $this->statistics = [
+            'totalInstances' => $this->user->instances()->count(),
+            'activeInstances' => $this->user->instances()->active()->count(),
+            'expiredInstances' => $this->user->instances()->expired()->count(),
+            'paidInstances' => $this->user->instances()->paid()->count(),
+        ];
+    }
 
-        $this->paidInstancesCount = $userInstances->whereHas('subscription.plan', function ($query) {
-            $query->where('is_free', false);
-        })->count();
+    public function loadSubscriptionInfo()
+    {
+        $activeSubscription = $this->user->subscriptions()->where('status', 'active')->latest()->first();
 
-        $this->activeInstancesCount = $userInstances->where('status', 'active')->count();
-        $this->expiredInstancesCount = $userInstances->where('status', 'expired')->count();
-        $this->totalInstancesCount = $userInstances->count();
+        if ($activeSubscription && $this->currentPlan) {
+            $this->subscriptionEndDate = $activeSubscription->end_date;
+            $startDate = $activeSubscription->start_date;
+            $this->totalDays = intval($this->currentPlan->duration_days);
 
-        $this->currentPlan = $user->activePlan();
-        if ($this->currentPlan) {
-            $this->remainingInstances = $this->currentPlan->instance_limit === null
-                ? 'Illimité'
-                : max(0, $this->currentPlan->instance_limit - $this->totalInstancesCount);
+            // Calculer les jours utilisés et forcer l'arrondi à l'entier
+            $now = Carbon::now();
+            $this->daysUsed = intval($startDate->diffInDays($now) + 1);
+
+            // S'assurer que daysUsed ne dépasse pas totalDays
+            $this->daysUsed = min($this->daysUsed, $this->totalDays);
         } else {
-            $this->remainingInstances = 0;
+            $this->subscriptionEndDate = null;
+            $this->daysUsed = 0;
+            $this->totalDays = 0;
         }
+    }
+
+    #[On('planChanged')]
+    public function handlePlanChanged()
+    {
+        $this->currentPlan = $this->user->fresh()->activePlan();
     }
 
     public function changePlan($planId)
     {
-        $user = Auth::user();
         $newPlan = Plan::findOrFail($planId);
-
-        // Ici, vous devriez implémenter la logique de paiement si nécessaire
-
-        $user->subscriptions()->where('status', 'active')->update(['status' => 'expired']);
-
-        Subscription::create([
-            'user_id' => $user->id,
-            'plan_id' => $newPlan->id,
-            'start_date' => now(),
-            'end_date' => now()->addDays($newPlan->duration_days),
-            'status' => 'active'
-        ]);
-
+        $this->user->changePlan($newPlan);
+        $this->currentPlan = $newPlan;
+        $this->dispatch('planChanged');
         $this->alert('success', 'Votre plan a été mis à jour avec succès.');
-        $this->loadStatistics();
+    }
+
+    public function cancelSubscription()
+    {
+        $this->user->cancelSubscription();
+        $this->currentPlan = $this->user->fresh()->activePlan();
+        $this->dispatch('planChanged');
+        $this->alert('success', 'Votre abonnement a été annulé. Vous êtes maintenant sur le plan gratuit.');
     }
 
     public function render()
     {
         return view('livewire.client.home-client', [
-            'paidInstancesCount' => $this->paidInstancesCount,
-            'activeInstancesCount' => $this->activeInstancesCount,
-            'expiredInstancesCount' => $this->expiredInstancesCount,
-            'totalInstancesCount' => $this->totalInstancesCount,
-            'currentPlan' => $this->currentPlan,
-            'remainingInstances' => $this->remainingInstances,
             'plans' => Plan::all(),
-            'subscriptionPlans' => new SubscriptionPlans(),
+            'subscriptionEndDate' => $this->subscriptionEndDate,
+            'daysRemaining' => $this->daysRemaining,
+            'percentageDaysUsed' => $this->percentageDaysUsed,
         ])->layout('layouts.homeClient');
     }
 }

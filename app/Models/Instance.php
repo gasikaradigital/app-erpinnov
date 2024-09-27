@@ -20,6 +20,7 @@ class Instance extends Model
         'user_id',
         'reference',
         'name',
+        'entreprise',
         'url',
         'status',
         'subscription_id',
@@ -41,7 +42,7 @@ class Instance extends Model
     {
         return $this->belongsTo(User::class);
     }
-    
+
     public function subscription()
     {
         return $this->belongsTo(Subscription::class);
@@ -51,7 +52,7 @@ class Instance extends Model
     {
         return $this->subscription->plan->is_free;
     }
-    
+
     public function isActive()
     {
         return $this->status === self::STATUS_ACTIVE;
@@ -104,5 +105,19 @@ class Instance extends Model
     public function scopeActive($query)
     {
         return $query->where('status', self::STATUS_ACTIVE);
+    }
+
+
+    public function scopeExpired($query)
+    {
+        return $query->where('status', self::STATUS_EXPIRED);
+    }
+
+
+    public function scopePaid($query)
+    {
+        return $query->whereHas('subscription.plan', function ($q) {
+            $q->where('is_free', false);
+        });
     }
 }

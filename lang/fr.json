@@ -382,8 +382,8 @@
     "delete": "Supprimer",
     "null_instance_dispobile": "Aucune instance disponible pour le moment.",
     "menu_action": "Menu des actions",
-    "instance_payante" : "Instances abonnées",
-    "instance_active" : "Instances actives",
-    "instance_expired" : "Instances suspendues",
-    "instance_total_limit" : "Total instances / Limite"
+    "instance_payante" : "Abonnées",
+    "instance_active" : "Actives",
+    "instance_expired" : "Suspendues",
+    "instance_total_limit" : "Total / Limite"
 }

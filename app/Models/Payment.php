@@ -5,21 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Subscription extends Model
+class Payment extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
         'plan_id',
-        'start_date',
-        'end_date',
+        'subscription_id',
+        'amount',
         'status',
-    ];
-
-    protected $casts = [
-        'start_date' => 'datetime',
-        'end_date' => 'datetime',
+        'payment_method',
+        'transaction_id',
+        'cardholder_name'
     ];
 
     public function user()
@@ -32,13 +30,8 @@ class Subscription extends Model
         return $this->belongsTo(Plan::class);
     }
 
-    public function instance()
+    public function subscription()
     {
-        return $this->hasOne(Instance::class);
-    }
-
-    public function payment()
-    {
-        return $this->hasOne(Payment::class);
+        return $this->belongsTo(Subscription::class);
     }
 }

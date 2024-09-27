@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -11,6 +12,7 @@ class PlansTableSeeder extends Seeder
     {
         DB::table('plans')->insert([
             [
+                'uuid' => Str::uuid(),
                 'name' => 'Plan Gratuit',
                 'price' => 0,
                 'duration_days' => 30,
@@ -22,6 +24,7 @@ class PlansTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'uuid' => Str::uuid(),
                 'name' => 'Plan Solo',
                 'price' => 20.00,
                 'duration_days' => 30,
@@ -33,6 +36,7 @@ class PlansTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'uuid' => Str::uuid(),
                 'name' => 'Plan Solo +',
                 'price' => 50.00,
                 'duration_days' => 30,

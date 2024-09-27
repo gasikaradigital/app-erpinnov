@@ -1,7 +1,8 @@
-<div class="container mt-3">
+<div class="container-xxl flex-grow-1 container-p-y">
     @include('livewire.client.messages.styleLoader')
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
+
+<div class="row justify-content-center">
+        <div class="col-lg-7">
             <div class="p-3 card p-md-3">
                 <div class="card-body">
                     <div class="text-center">
@@ -10,38 +11,61 @@
                     </div>
                     @include('livewire.client.messages.infocreated')
                     <div class="mt-2">
+                        @if(!$showPlanSelection)
                         <div class="p-1">
                             <form wire:submit.prevent="store">
-                                <!-- Details -->
-                                <div class="pt-3 content pt-lg-0">
-                                    <!-- Champ input pour le nom de l'instance -->
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control form-control-lg @error('name') is-invalid @enderror" 
-                                               id="name" wire:model="name" placeholder="Saisir ici nom de votre instance" />
-                                        @error('name') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                <!-- Votre formulaire existant ici -->
+                                <div class="mb-4">
+                                    <label for="name" class="form-label fw-bold mb-2">Nom d'une instance</label>
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control @error('name') is-invalid @enderror"
+                                            id="name" wire:model="name" placeholder="votreinstance" autocomplete="off"
+                                            aria-describedby="name">
+                                        <span class="input-group-text bg-light">.erpinnov.com</span>
                                     </div>
-                                    <h5>
-                                        Modules <br>
-                                        <small>Sélectionnez les modules souhaités pour votre instance.</small>
-                                    </h5>
-                                   <x-modules :modules="$modules" />
-                                    @error('modules') <span class="text-danger">{{ $message }}</span> @enderror
-                                    <div class="mt-3 col-12 d-flex justify-content-center">
-                                        <button type="submit" class="btn btn-primary btn-next">
-                                            <span class="align-middle d-sm-inline-block d-none me-sm-1">Créer votre
-                                                instance</span>
-                                            <i class="ti ti-arrow-right ti-xs"></i>
-                                        </button>
+                                    @error('name')
+                                    <div class="invalid-feedback d-block">
+                                        {{ $message }}
                                     </div>
+                                    @enderror
+                                    <small id="name" class="form-text mt-2">
+                                        Entrez le nom de votre instance. Il sera suivi de .gasikara.mg
+                                    </small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Votre entreprise</label>
+                                    <select wire:model="entreprise"
+                                        class="form-control form-control-lg @error('entreprise') is-invalid @enderror">
+                                        <option value="">-- Chosir votre entreprise --</option>
+                                        <option value="Entreprise_1">Entreprise_1</option>
+                                        <option value="Entreprise_2">Entreprise_2</option>
+                                    </select>
+                                    @error('entreprise') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                </div>
+                                <div class="mt-3 col-12 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary btn-next">
+                                        <span class="align-middle d-sm-inline-block d-none me-sm-1">Créer votre
+                                            instance</span>
+                                        <i class="ti ti-arrow-right ti-xs"></i>
+                                    </button>
                                 </div>
                             </form>
                         </div>
+                        @else
+                        <div class="text-center">
+                            <p>Vous avez atteint la limite d'instances pour votre plan actuel.</p>
+                            <button class="btn btn-primary" wire:click="$dispatch('openModal', 'choose-plan')">
+                                Choisir une offre
+                            </button>
+                        </div>
+                        @endif
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
+
     <div class="overlay" wire:loading wire:target="store">
         <div class="spinner-container">
             <div class="sk-wave sk-primary">
@@ -55,15 +79,6 @@
             <p class="waiting-text">Veuillez patienter, svp</p>
         </div>
     </div>
-     <!-- Overlay de chargement
-    <div class="overlay" wire:loading wire:target="store">
-        <div class="spinner-container">
-            <div class="spinner"></div>
-            <p class= "loading-text mt-3">Création de l'instance en cours...</p>
-            <p class="waiting-text">Veuillez patienter, svp</p>
-        </div>
-    </div>-->
-
 </div>
 @push('scripts')
 <script>
@@ -76,4 +91,4 @@
         });
     });
 </script>
-@endpush  
+@endpush

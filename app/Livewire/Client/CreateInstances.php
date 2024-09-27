@@ -2,61 +2,58 @@
 
 namespace App\Livewire\Client;
 
-use Livewire\Component;
-use Livewire\WithPagination;
-use Jantinnerezo\LivewireAlert\LivewireAlert;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use App\Models\Instance;
-use App\Models\DolibarrCredential;
-use App\Models\Subscription;
+use Carbon\Carbon;
 use App\Models\Plan;
-use App\Services\InstanceProvisioningService;
+use Livewire\Component;
+use App\Models\Instance;
+use Illuminate\Support\Str;
+use Livewire\Attributes\On;
+use App\Models\Subscription;
+use Livewire\WithPagination;
+use App\Models\DolibarrCredential;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
-use Carbon\Carbon;
 use App\Notifications\InstanceCreated;
 use Illuminate\Support\Facades\Notification;
+use App\Services\InstanceProvisioningService;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class CreateInstances extends Component
-{   
+{
     use WithPagination, LivewireAlert, AuthorizesRequests;
-    
+
     public $newInstanceInfo = null;
     public $name = '';
-    
-    public $modules = [
-        'gestion_commerciale' => [
-            'name' => 'Gestion Commerciale',
-            'selected' => false,
-            'description' => 'Modules Inclus : Facturation, Devis, Commandes, Propositions commerciales'
-        ],
-        'crm' => [
-            'name' => 'Gestion de la Relation Client (CRM)',
-            'selected' => false,
-            'description' => 'Modules Inclus : Gestion des opportunités, Gestion des contacts, Suivi des interactions'
-        ],
-        'gestion_stocks' => [
-            'name' => 'Gestion des Stocks',
-            'selected' => false,
-            'description' => 'Modules Inclus : Gestion des produits, Suivi des mouvements de stock, Gestion des inventaires'
-        ],
-        'comptabilite_finance' => [
-            'name' => 'Comptabilité & Finance',
-            'selected' => false,
-            'description' => 'Modules Inclus : Comptabilité, Gestion des paiements, Budgétisation'
-        ],
-    ];
-    
+    public $entreprise;
+    public $showPlanSelection = false;
+
+    public function mount()
+    {
+        $this->checkInstanceCreationEligibility();
+    }
+
+    public function checkInstanceCreationEligibility()
+    {
+        $user = Auth::user();
+        $this->showPlanSelection = !$user->canCreateInstance();
+    }
+
+    public function openPlanSelection()
+    {
+        $this->showPlanSelection = true;
+    }
+
+   #[On('planChanged')]
+    public function planChanged()
+    {
+        $this->checkInstanceCreationEligibility();
+    }
     protected function rules()
     {
         return [
             'name' => ['required', 'unique:instances,name', 'min:3', 'max:15'],
-            'modules' => ['required', 'array', function ($attribute, $value, $fail) {
-                if (count(array_filter($value)) === 0) {
-                    $fail('Veuillez sélectionner au moins un module.');
-                }
-            }],
+            'entreprise' => 'required',
         ];
     }
 
@@ -65,41 +62,40 @@ class CreateInstances extends Component
         'name.unique' => 'Ce nom d\'instance est déjà utilisé.',
         'name.min' => 'Le nom de l\'instance doit contenir au moins 3 caractères.',
         'name.max' => 'Le nom de l\'instance ne peut pas dépasser 15 caractères.',
-        'modules.required' => 'Veuillez sélectionner au moins un module.',
+        'entreprise.required' => 'Choix de l\'entreprise est obligatoire.',
     ];
-    
+
     public function store()
-    {   
+    {
         $this->dispatch('instanceCreationStarted');
-        
+
         $this->validate();
 
         $user = Auth::user();
-        
+
         if (!$user->canCreateInstance()) {
             $this->alert('error', 'Vous avez atteint votre limite de création d\'instances. Veuillez mettre à niveau votre abonnement pour créer plus d\'instances.');
             return;
         }
-        
-        $selectedModules = array_keys(array_filter($this->modules));
+
         $reference = Instance::generateNextReference();
         $password_dolibarr = Str::random(16);
         $login_dolibarr = $this->generateRandomLogin($this->name);
         $url_suffix = Str::slug($this->name);
-        
+
         $provisioningService = new InstanceProvisioningService();
-        
+
         $instanceDetails = $provisioningService->provisionInstance(
-            $this->name, 
-            $password_dolibarr, 
-            $login_dolibarr, 
+            $this->name,
+            $password_dolibarr,
+            $login_dolibarr,
             $url_suffix);
 
         if (!$instanceDetails) {
             $this->alert('error', 'Une erreur est survenue lors de la création de l\'instance.');
             return;
         }
-        
+
         try {
             $activeSubscription = $user->activeSubscription();
             if (!$activeSubscription) {
@@ -119,6 +115,7 @@ class CreateInstances extends Component
                 'subscription_id' => $activeSubscription->id,
                 'reference' => $reference,
                 'name' => $this->name,
+                'entreprise' => $this->entreprise,
                 'url' => $instanceDetails['url'],
                 'status' => Instance::STATUS_ACTIVE,
                 'auth_token' => Instance::generateUniqueAuthToken(),
@@ -134,30 +131,22 @@ class CreateInstances extends Component
                 'password' => $password_dolibarr,
                 'url' => "https://" . $instanceDetails['url'],
             ];
-            
+
             Notification::send($user, new InstanceCreated($this->newInstanceInfo));
-            
+
             $this->alert('success', 'Votre instance a été créée avec succès.');
             session()->flash('success', 'Ces informations ont été envoyées par email.');
-            $this->reset(['name', 'modules']);
-            
+            $this->reset(['name']);
+
          } catch (\Exception $e) {
             \Log::error('Erreur lors de la création de l\'instance: ' . $e->getMessage());
             $this->alert('error', 'Une erreur inattendue est survenue. Veuillez réessayer plus tard.');
         }
-        
+
         $this->dispatch('instanceCreationEnded');
     }
-    
-    private function getSelectedModulesNames()
-    {
-        return array_values(array_map(function($module) {
-            return $module['name'];
-        }, array_filter($this->modules, function($module) {
-            return $module['selected'];
-        })));
-    }
-    
+
+
     private function generateRandomLogin($instanceName)
     {
         $baseName = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $instanceName));
@@ -173,7 +162,8 @@ class CreateInstances extends Component
             'password' => Hash::make($password),
         ]);
     }
-    
+
+
     public function render()
     {
         $user = Auth::user();
@@ -187,6 +177,7 @@ class CreateInstances extends Component
             'activeSubscription' => $activeSubscription,
             'canCreate' => $canCreate,
             'remainingInstances' => $remainingInstances,
+            'showPlanSelection' => $this->showPlanSelection,
         ])->layout('layouts.homeClient');
     }
 }

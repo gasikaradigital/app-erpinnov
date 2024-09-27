@@ -1,4 +1,3 @@
-
 {{-- @if (session()->has('success'))
 <div class="alert alert-success alert-dismissible fade show" role="alert">
     <i class="ti ti-at"></i>
@@ -6,7 +5,6 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endif --}}
-
 @if (session()->has('error'))
     <div class="alert alert-danger">
         {{ session('error') }}

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('subscription_id')->constrained()->onDelete('cascade');
             $table->string('reference')->unique();
             $table->string('name')->unique();
+            $table->string('entreprise')->nullable();
             $table->string('url')->unique();
             $table->enum('status', ['active', 'expired'])->default('active');
             $table->string('auth_token', 64)->nullable();

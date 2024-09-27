@@ -1,60 +1,39 @@
-<div class="row g-4">
-    <div class="col-sm-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar me-3 bg-light-info">
-                        <i class="ti ti-user-dollar ti-md text-info"></i>
-                    </div>
-                    <div>
-                        <h2 class="mb-0">{{ $paidInstancesCount }}</h2>
-                        <p class="text-muted mb-0">{{ __('instance_payante') }}</p>
+<div class="col-lg-7 col-md-6">
+    <div class="shadow-sm card">
+        <div class="card-body">
+            <div class="mb-3 d-flex justify-content-between align-items-center">
+                <h5 class="m-0 card-title fw-bold">Instances</h5>
+                <small class="text-muted">Mis à jour il y a 1 mois</small>
+            </div>
+            <div class="text-center row g-3">
+                <div class="col-6 col-sm-3">
+                    <div class="p-3 rounded bg-light">
+                        <i class="bi bi-clock text-primary fs-4"></i>
+                        <h3 class="mt-2 mb-0">{{ $statistics['paidInstances'] }}</h3>
+                        <p class="mb-0 text-muted small">{{ __('instance_payante') }}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar me-3 bg-light-success">
-                        <i class="ti ti-user-check ti-md text-success"></i>
-                    </div>
-                    <div>
-                        <h2 class="mb-0">{{ $activeInstancesCount }}</h2>
-                        <p class="text-muted mb-0">{{ __('instance_active') }}</p>
+                <div class="col-6 col-sm-3">
+                    <div class="p-3 rounded bg-light">
+                        <i class="bi bi-person text-info fs-4"></i>
+                        <h3 class="mt-2 mb-0">{{ $statistics['activeInstances'] }}</h3>
+                        <p class="mb-0 text-muted small">{{ __('instance_active') }}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar me-3 bg-light-danger">
-                        <i class="ti ti-user-cancel ti-md text-danger"></i>
-                    </div>
-                    <div>
-                        <h2 class="mb-0">{{ $expiredInstancesCount }}</h2>
-                        <p class="text-muted mb-0">{{ __('instance_expired') }}</p>
+                <div class="col-6 col-sm-3">
+                    <div class="p-3 rounded bg-light">
+                        <i class="bi bi-pause-circle text-warning fs-4"></i>
+                        <h3 class="mt-2 mb-0">{{ $statistics['expiredInstances'] }}</h3>
+                        <p class="mb-0 text-muted small">{{ __('instance_expired') }}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="avatar me-3 bg-light-primary">
-                        <i class="ti ti-server ti-md text-primary"></i>
-                    </div>
-                    <div>
-                        <h2 class="mb-0">{{ $totalInstancesCount }} / {{ $currentPlan->instance_limit ?? 'Illimité'
-                            }}</h2>
-                        <p class="text-muted mb-0">{{ __('instance_total_limit') }}</p>
+                <div class="col-6 col-sm-3">
+                    <div class="p-3 rounded bg-light">
+                        <i class="bi bi-graph-up text-success fs-4"></i>
+                        <h3 class="mt-2 mb-0">{{ $statistics['totalInstances'] }} / {{ $currentPlan->instance_limit ??
+                            'Illimité'
+                            }}</h3>
+                        <p class="mb-0 text-muted small">{{ __('instance_total_limit') }}</p>
                     </div>
                 </div>
             </div>

@@ -1,57 +1,58 @@
 <div>
-    @if($currentPlan)
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body">
-                    <h4 class="card-title mb-4">Plan actuel : {{ $currentPlan->name }}</h4>
-                    <div class="row g-4">
-                        <div class="col-md-3">
-                            <p class="mb-1 text-muted">Prix</p>
-                            <h5>{{ $currentPlan->price }} € / mois</h5>
+  <div class="modal fade" id="pricingModal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Plans tarifaires</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-4 text-center">Choisissez le plan le mieux adapté à vos besoins.</p>
+                    <div class="row">
+                        @foreach($plans as $plan)
+                        <div class="mb-4 col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $plan->name }}</h5>
+                                    <h2 class="card-price">{{ $plan->price }}€<small>/mois</small></h2>
+                                    <p>{{ $plan->description }}</p>
+                                    <ul class="mt-3 mb-4 list-unstyled">
+                                        <li><i class="ti ti-check text-success"></i> {{ $plan->instance_limit ?? 'Illimité'
+                                            }} instances</li>
+                                        @foreach(json_decode($plan->modules) as $module)
+                                        <li><i class="ti ti-check text-success"></i> {{ $module }}</li>
+                                        @endforeach
+                                    </ul>
+                                    <button wire:click="changePlan('{{ $plan->uuid }}')"
+                                        class="btn {{ $currentPlan && $currentPlan->id == $plan->id ? 'btn-outline-secondary' : 'btn-success' }}"
+                                        {{ $currentPlan && $currentPlan->id == $plan->id ? 'disabled' : '' }}>
+                                        {{ $currentPlan && $currentPlan->id == $plan->id ? 'Plan actuel' : 'Choisir ce plan'
+                                        }}
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <p class="mb-1 text-muted">Limite d'instances</p>
-                            <h5>{{ $currentPlan->instance_limit ?? 'Illimité' }}</h5>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="mb-1 text-muted">Durée</p>
-                            <h5>{{ $currentPlan->duration_days }} jours</h5>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="mb-1 text-muted">Instances restantes</p>
-                            <h5>{{ $remainingInstances }}</h5>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @endif
 
-    <h4 class="text-center mb-4">Nos offres d'abonnement</h4>
-    <div class="row g-4">
-        @foreach($plans as $plan)
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center d-flex flex-column">
-                    <h5 class="mb-3">{{ $plan->name }}</h5>
-                    <p class="mb-3">{{ $plan->price }} € / mois</p>
-                    <p class="mb-3">{{ $plan->instance_limit ?? 'Illimité' }} instances</p>
-                    <p class="flex-grow-1">{{ $plan->description }}</p>
-                    <ul class="list-unstyled mb-4">
-                        @foreach(json_decode($plan->modules) as $module)
-                        <li><i class="ti ti-check text-success"></i> {{ $module }}</li>
-                        @endforeach
-                    </ul>
-                    @if($currentPlan && $currentPlan->id == $plan->id)
-                    <button class="btn btn-success" disabled>Plan actuel</button>
-                    @else
-                    <button wire:click="changePlan({{ $plan->id }})" class="btn btn-primary">Choisir ce plan</button>
-                    @endif
-                </div>
-            </div>
-        </div>
-        @endforeach
-    </div>
+    <style>
+        .card-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .card-price small {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </div>

@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/page-pricing.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/front-page-payment.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/bs-stepper/bs-stepper.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
@@ -107,6 +108,8 @@
 
 <script src="{{ asset('assets/js/app-logistics-dashboard.js') }}"></script>
 <script src="{{ asset('assets/js/wizard-ex-create-deal.js') }}"></script>
+<script src="{{ asset('assets/js/pages-pricing.js') }}"></script>
+<script src="{{ asset('assets/js/front-page-payment.js') }}"></script>
 
 <script src="{{ asset('assets/js/modal-edit-user.js') }}"></script>
 <script src="{{ asset('assets/js/app-user-view.js') }}"></script>
