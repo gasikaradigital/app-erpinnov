@@ -18,9 +18,9 @@ use App\Livewire\Client\CreateInstances;
 use App\Livewire\Admin\ManageAbonnement;
 use App\Livewire\Admin\DetailAbonnement;
 use App\Livewire\Admin\DetailFacture;
-use App\Livewire\Client\InstanceListes;
-use App\Livewire\Client\FactureClient;
-use App\Livewire\Client\CreateInstances;
+// use App\Livewire\Client\InstanceListes;
+// use App\Livewire\Client\FactureClient;
+// use App\Livewire\Client\CreateInstances;
 
 
 Route::get('/', HomePage::class)->name('homepage');
