@@ -177,11 +177,14 @@
                                 </td>
                                 <td>
 
-                                    <button wire:click="editUser({{ $instance->id }})" data-bs-toggle="modal"
-                                        data-bs-target="#editModal"
-                                        class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
-                                        <i class="ti ti-eye ti-md" title="Voir le détail"></i>
-                                    </button>
+
+                                    <a href="{{ route('abonnement.detail') }}">
+                                        <button
+                                                class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
+                                            <i class="ti ti-eye ti-md" title="Voir le détail"></i>
+                                        </button>
+                                    </a>
+
 
                                     <div class="d-inline-block">
                                         <a href="javascript:;"
@@ -195,7 +198,7 @@
                                             <div class="dropdown-divider"></div>
                                             <li>
                                                 <a href="javascript:;"
-                                                    wire:click.prevent="confirmUserDeletion({{ $instance->id }})"
+
                                                     class="dropdown-item text-danger delete-record">Supprimer</a>
                                             </li>
                                         </ul>
@@ -224,11 +227,12 @@
                                 </td>
                                 <td>
 
-                                    <button wire:click="editUser({{ $instance->id }})" data-bs-toggle="modal"
-                                        data-bs-target="#editModal"
-                                        class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
-                                        <i class="ti ti-eye ti-md" title="Voir le détail"></i>
-                                    </button>
+                                    <a href="{{ route('abonnement.detail') }}">
+                                        <button
+                                                class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
+                                            <i class="ti ti-eye ti-md" title="Voir le détail"></i>
+                                        </button>
+                                    </a>
 
                                     <div class="d-inline-block">
                                         <a href="javascript:;"
@@ -242,7 +246,7 @@
                                             <div class="dropdown-divider"></div>
                                             <li>
                                                 <a href="javascript:;"
-                                                    wire:click.prevent="confirmUserDeletion({{ $instance->id }})"
+                                                    {{-- wire:click.prevent="confirmUserDeletion({{ $instance->id }})" --}}
                                                     class="dropdown-item text-danger delete-record">Supprimer</a>
                                             </li>
                                         </ul>
@@ -279,11 +283,12 @@
                                 </td>
                                 <td>
 
-                                    <button wire:click="editUser({{ $instance->id }})" data-bs-toggle="modal"
-                                        data-bs-target="#editModal"
-                                        class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
-                                        <i class="ti ti-eye ti-md"></i>
-                                    </button>
+                                    <a href="{{ route('abonnement.detail') }}">
+                                        <button
+                                                class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
+                                            <i class="ti ti-eye ti-md" title="Voir le détail"></i>
+                                        </button>
+                                    </a>
                                     <div class="d-inline-block">
                                         <a href="javascript:;"
                                             class="btn btn-sm btn-text-secondary rounded-pill btn-icon hide-arrow"
@@ -296,7 +301,7 @@
                                             <div class="dropdown-divider"></div>
                                             <li>
                                                 <a href="javascript:;"
-                                                    wire:click.prevent="confirmUserDeletion({{ $instance->id }})"
+                                                    {{-- wire:click.prevent="confirmUserDeletion({{ $instance->id }})" --}}
                                                     class="dropdown-item text-danger delete-record">Supprimer</a>
                                             </li>
                                         </ul>
@@ -325,11 +330,12 @@
                                 </td>
                                 <td>
 
-                                    <button wire:click="editUser({{ $instance->id }})" data-bs-toggle="modal"
-                                        data-bs-target="#editModal"
-                                        class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
-                                        <i class="ti ti-eye ti-md"></i>
-                                    </button>
+                                    <a href="{{ route('abonnement.detail') }}">
+                                        <button
+                                                class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
+                                            <i class="ti ti-eye ti-md" title="Voir le détail"></i>
+                                        </button>
+                                    </a>
 
                                     <div class="d-inline-block">
                                         <a href="javascript:;"
@@ -343,7 +349,7 @@
                                             <div class="dropdown-divider"></div>
                                             <li>
                                                 <a href="javascript:;"
-                                                    wire:click.prevent="confirmUserDeletion({{ $instance->id }})"
+                                                    {{-- wire:click.prevent="confirmUserDeletion({{ $instance->id }})" --}}
                                                     class="dropdown-item text-danger delete-record">Supprimer</a>
                                             </li>
                                         </ul>
@@ -373,12 +379,12 @@
                                 </td>
                                 <td>
 
-                                    <button wire:click="editUser({{ $instance->id }})" data-bs-toggle="modal"
-                                        data-bs-target="#editModal"
-                                        class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
-                                        <i class="ti ti-eye ti-md"></i>
-                                    </button>
-
+                                    <a href="{{ route('abonnement.detail') }}">
+                                        <button
+                                                class="btn btn-sm btn-text-secondary rounded-pill btn-icon item-edit">
+                                            <i class="ti ti-eye ti-md" title="Voir le détail"></i>
+                                        </button>
+                                    </a>
                                     <div class="d-inline-block">
                                         <a href="javascript:;"
                                             class="btn btn-sm btn-text-secondary rounded-pill btn-icon hide-arrow"
@@ -391,7 +397,7 @@
                                             <div class="dropdown-divider"></div>
                                             <li>
                                                 <a href="javascript:;"
-                                                    wire:click.prevent="confirmUserDeletion({{ $instance->id }})"
+                                                    {{-- wire:click.prevent="confirmUserDeletion({{ $instance->id }})" --}}
                                                     class="dropdown-item text-danger delete-record">Supprimer</a>
                                             </li>
                                         </ul>
@@ -413,7 +419,7 @@
     </div>
     <!-- / Content -->
     <!-- Modal -->
-    <!-- @include('livewire.admin.modal.create-modal-instance') -->
+    {{-- <!-- @include('livewire.admin.modal.create-modal-instance') --> --}}
 
      <!-- Add New Address Modal -->
      <div class="modal fade" id="addNewAddress" tabindex="-1" aria-hidden="true">
@@ -500,10 +506,5 @@
 
 
 
-<!-- @push('scripts')
-    <script
-        src="{{ asset('assets/js/extended-ui-sweetalert2.js') }}">
-    </script>
-@endpush -->
 
 
