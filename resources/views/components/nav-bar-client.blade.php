@@ -34,7 +34,7 @@
 
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Language 
+                <!-- Language
                 <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-language rounded-circle ti-md"></i>
@@ -55,7 +55,7 @@
                 </li>
                  Language -->
 
-                <!-- Style Switcher 
+                <!-- Style Switcher
                 <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-md"></i>

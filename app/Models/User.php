@@ -23,7 +23,6 @@ class User extends Authenticatable
     use HasRoles;
     use SoftDeletes;
     protected $dates = ['deleted_at'];
-
     protected $fillable = [
         'name',
         'email',
