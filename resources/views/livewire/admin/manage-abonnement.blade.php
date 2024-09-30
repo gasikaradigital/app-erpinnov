@@ -413,6 +413,53 @@
                         </div>
                     </div>
                     <div style="width: 1%;"></div>
+
+                     <!-- Pagination Sizes -->
+              <div class="card mb-4">
+                {{-- <h5 class="card-header">Sizes & Alignments</h5> --}}
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <small class="text-light fw-medium">Pagination</small>
+                      <div class="demo-inline-spacing">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination pagination-sm justify-content-end">
+                            <li class="page-item prev">
+                              <a class="page-link" href="javascript:void(0);"
+                                ><i class="tf-icon fs-6 ti ti-chevrons-left"></i
+                              ></a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="javascript:void(0);">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="javascript:void(0);">2</a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="javascript:void(0);">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="javascript:void(0);">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="javascript:void(0);">5</a>
+                            </li>
+                            <li class="page-item next">
+                              <a class="page-link" href="javascript:void(0);"
+                                ><i class="tf-icon fs-6 ti ti-chevrons-right"></i
+                              ></a>
+                            </li>
+                          </ul>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
                 </div>
             </div>
         </div>
