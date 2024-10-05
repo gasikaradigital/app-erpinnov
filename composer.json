@@ -8,6 +8,7 @@
         "php": "^8.2",
         "jantinnerezo/livewire-alert": "^3.0",
         "laravel-lang/common": "^6.4",
+        "laravel/cashier-paddle": "^2.5",
         "laravel/framework": "^11.9",
         "laravel/jetstream": "^5.1",
         "laravel/sanctum": "^4.0",

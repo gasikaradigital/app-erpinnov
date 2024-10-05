@@ -44,7 +44,7 @@ class CreateInstances extends Component
         $this->showPlanSelection = true;
     }
 
-   #[On('planChanged')]
+    #[On('planChanged')]
     public function planChanged()
     {
         $this->checkInstanceCreationEligibility();
@@ -89,7 +89,8 @@ class CreateInstances extends Component
             $this->name,
             $password_dolibarr,
             $login_dolibarr,
-            $url_suffix);
+            $url_suffix
+        );
 
         if (!$instanceDetails) {
             $this->alert('error', 'Une erreur est survenue lors de la création de l\'instance.');
@@ -138,7 +139,7 @@ class CreateInstances extends Component
             session()->flash('success', 'Ces informations ont été envoyées par email.');
             $this->reset(['name']);
 
-         } catch (\Exception $e) {
+        } catch (\Exception $e) {
             \Log::error('Erreur lors de la création de l\'instance: ' . $e->getMessage());
             $this->alert('error', 'Une erreur inattendue est survenue. Veuillez réessayer plus tard.');
         }

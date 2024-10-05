@@ -13,15 +13,17 @@ return new class extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
+            $table->string('paddle_plan_id')->nullable();
             $table->string('uuid')->unique();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->decimal('price', 8, 2);
+            $table->decimal('price_monthly', 12, 2);
+            $table->decimal('price_yearly', 12, 2);
             $table->integer('instance_limit')->nullable();
-            $table->integer('duration_days');
+            $table->integer('duration_days')->nullable(); // Ajout pour la période d'essai
             $table->boolean('is_free')->default(false);
             $table->boolean('is_default')->default(false);
-            $table->json('modules');
+            $table->json('features');
             $table->timestamps();
         });
     }

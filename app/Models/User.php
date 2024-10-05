@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Models\Role;
 use Laravel\Jetstream\HasProfilePhoto;
@@ -12,8 +13,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Paddle\Billable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
     use HasFactory;
@@ -22,6 +24,8 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
     use HasRoles;
     use SoftDeletes;
+    use Billable;
+
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
@@ -66,6 +70,11 @@ class User extends Authenticatable
                 ]);
             }
         });
+    }
+
+    public function entreprises()
+    {
+        return $this->hasMany(Entreprise::class);
     }
 
     public function instances()

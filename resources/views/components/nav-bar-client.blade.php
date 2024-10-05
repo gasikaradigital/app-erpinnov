@@ -34,7 +34,7 @@
 
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Language 
+                <!-- Language
                 <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-language rounded-circle ti-md"></i>
@@ -55,7 +55,7 @@
                 </li>
                  Language -->
 
-                <!-- Style Switcher 
+                <!-- Style Switcher
                 <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                         <i class="ti ti-md"></i>
@@ -169,7 +169,7 @@
                             <a class="dropdown-item" href="#">
                                 <span class="d-flex align-items-center align-middle">
                                     <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
-                                    <span class="flex-grow-1 align-middle">Abonnements</span>
+                                    <span class="flex-grow-1 align-middle">Facturation</span>
                                     <span
                                         class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2</span>
                                 </span>

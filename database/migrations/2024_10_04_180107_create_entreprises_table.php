@@ -10,13 +10,15 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('subscriptions', function (Blueprint $table) {
+        Schema::create('entreprises', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('plan_id')->constrained()->onDelete('cascade');
-            $table->dateTime('start_date');
-            $table->dateTime('end_date');
-            $table->enum('status', ['active', 'expired', 'cancelled'])->default('active');
+            $table->string('name');
+            $table->string('nif')->unique();
+            $table->string('ville');
+            $table->string('pays');
+            $table->string('phone');
+            $table->text('adresse');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('subscriptions');
+        Schema::dropIfExists('entreprises');
     }
 };

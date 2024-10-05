@@ -14,6 +14,7 @@ use App\Livewire\Client\FactureClient;
 use App\Livewire\Client\InstanceListes;
 use App\Livewire\Client\PaymentProcess;
 use App\Livewire\Client\CreateInstances;
+use App\Livewire\Guard\CreateEntreprise;
 
 Route::get('/', HomePage::class)->name('homepage');
 
@@ -54,7 +55,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
 
     // Route for Client
-    Route::middleware(['role:client'])->prefix('client-espace')->group(function () {
+    Route::middleware(['role:client', 'has.entreprise'])->prefix('client-espace')->group(function () {
 
         Route::get('/client', HomeClient::class)->name('espaceClient');
 
@@ -66,6 +67,9 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::get('/payment/process/{uuid}', PaymentProcess::class)->name('payment.process');
 
     });
+
+
+    Route::get('/entreprise/create', CreateEntreprise::class)->name('entreprise.create');
 
 });
 

@@ -10,7 +10,7 @@
                 </a>
             </li>
             <!-- Apps -->
-            <li class="menu-item @if(request()->routeIs('instance.create')) active @endif">
+            {{-- <li class="menu-item @if(request()->routeIs('instance.create')) active @endif">
                 <a href="{{ route('instance.create') }}" class="menu-link">
                     <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
                     <div data-i18n="Instance gratuit">Instance gratuit</div>
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </aside>

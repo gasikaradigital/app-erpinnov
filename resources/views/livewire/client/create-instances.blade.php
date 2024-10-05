@@ -5,13 +5,13 @@
         <div class="col-lg-7">
             <div class="p-3 card p-md-3">
                 <div class="card-body">
+                    @if(!$showPlanSelection)
                     <div class="text-center">
                         <h3 class="mb-2">Créer instance</h3>
                         <p>Fournissez des données avec ce formulaire pour créer instance.</p>
                     </div>
                     @include('livewire.client.messages.infocreated')
                     <div class="mt-2">
-                        @if(!$showPlanSelection)
                         <div class="p-1">
                             <form wire:submit.prevent="store">
                                 <!-- Votre formulaire existant ici -->
@@ -51,21 +51,20 @@
                                 </div>
                             </form>
                         </div>
-                        @else
-                        <div class="text-center">
-                            <p>Vous avez atteint la limite d'instances pour votre plan actuel.</p>
-                            <button class="btn btn-primary" wire:click="$dispatch('openModal', 'choose-plan')">
-                                Choisir une offre
-                            </button>
-                        </div>
-                        @endif
                     </div>
+                    @else
+                    <div class="text-center">
+                        <p class="text-danger">Vous avez atteint la limite d'instances pour votre plan actuel.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#pricingModal">
+                            Veuillez choisir une offre
+                        </button>
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="overlay" wire:loading wire:target="store">
         <div class="spinner-container">
             <div class="sk-wave sk-primary">
@@ -79,6 +78,8 @@
             <p class="waiting-text">Veuillez patienter, svp</p>
         </div>
     </div>
+      {{-- Modal show plans --}}
+      <livewire:client.subscription-plans />
 </div>
 @push('scripts')
 <script>

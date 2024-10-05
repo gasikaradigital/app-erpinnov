@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UsersSeeder::class,
             PlansTableSeeder::class,
-            SubscriptionSeeder::class,
+            //SubscriptionSeeder::class,
         ]);
 
         // User::factory(10)->create();

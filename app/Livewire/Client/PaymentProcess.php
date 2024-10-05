@@ -14,21 +14,21 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class PaymentProcess extends Component
 {
     use WithPagination, LivewireAlert, AuthorizesRequests;
+
     public $uuid;
     public $plan;
     public $cardholderName;
     public $cardNumber;
     public $cardExpiry;
     public $cardCVC;
-    public $months = 1; // Définissez-le comme un entier par défaut
-    public $total; // Total à payer
+    public $isAnnual = false;
+    public $total;
 
     protected $rules = [
         'cardholderName' => 'required|string|max:255',
         'cardNumber' => 'required|numeric|digits:16',
         'cardExpiry' => 'required|date_format:m/y',
         'cardCVC' => 'required|numeric|digits:3',
-        'months' => 'required|integer|min:1|max:12',
     ];
 
     public function mount($uuid)
@@ -38,14 +38,43 @@ class PaymentProcess extends Component
         $this->calculateTotal();
     }
 
-    public function updatedMonths()
+    public function updatedIsAnnual()
     {
         $this->calculateTotal();
     }
 
     public function calculateTotal()
     {
-        $this->total = $this->plan->price * $this->months;
+        if ($this->plan) {
+            $this->total = $this->isAnnual ? $this->plan->discounted_yearly_price : $this->plan->price_monthly;
+        } else {
+            $this->total = 0;
+        }
+    }
+
+    public function getMonthlyPriceProperty()
+    {
+        return $this->plan ? $this->plan->price_monthly : 0;
+    }
+
+    public function getYearlyPriceProperty()
+    {
+        return $this->plan ? $this->plan->discounted_yearly_price : 0;
+    }
+
+    public function getYearlySavingsProperty()
+    {
+        if (!$this->plan) return 0;
+        $regularYearlyPrice = $this->plan->price_monthly * 12;
+        return $regularYearlyPrice - $this->yearlyPrice;
+    }
+
+
+    public function changePlan($uuid)
+    {
+        $this->uuid = $uuid;
+        $this->plan = Plan::where('uuid', $uuid)->firstOrFail();
+        $this->calculateTotal();
     }
 
     public function processPayment()
@@ -58,7 +87,7 @@ class PaymentProcess extends Component
             'user_id' => $user->id,
             'plan_id' => $this->plan->id,
             'start_date' => now(),
-            'end_date' => now()->addMonths(intval($this->months)), // Convertit en entier
+            'end_date' => $this->isAnnual ? now()->addYear() : now()->addMonth(),
             'status' => 'active'
         ]);
 
@@ -73,18 +102,19 @@ class PaymentProcess extends Component
             'cardholder_name' => $this->cardholderName,
         ]);
 
-        // dd($subscription);
-        // dd($payment);
-
         $user->subscriptions()->where('id', '!=', $subscription->id)->update(['status' => 'expired']);
 
-        $this->alert('success', 'Paiement effectué avec succès. Votre plan a été mis à jour pour ' . $this->months . ' mois.');
+        $this->alert('success', 'Paiement effectué avec succès. Votre plan a été mis à jour pour ' . ($this->isAnnual ? '1 an' : '1 mois') . '.');
 
         return redirect()->route('instance.create');
     }
 
     public function render()
     {
-        return view('livewire.client.payment-process')->layout('layouts.homeClient');
+        return view('livewire.client.payment-process', [
+            'monthlyPrice' => $this->monthlyPrice,
+            'yearlyPrice' => $this->yearlyPrice,
+            'yearlySavings' => $this->yearlySavings,
+        ])->layout('layouts.homeClient');
     }
 }
