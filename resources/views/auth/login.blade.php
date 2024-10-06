@@ -25,12 +25,12 @@
                                             fill="#7367F0" />
                                     </svg>
                                 </span> --}}
-                                <span class="app-brand-text demo text-body fw-bold ms-1">Gasikara Digital</span>
+                                <span class="app-brand-text demo text-body fw-bold ms-1">ERP INNOV</span>
                             </a>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="pt-2 mb-1">ERP INNOV! 👋</h4>
-                        <p class="mb-4">Veuillez vous connecter à votre compte et commencer l'aventure</p>
+                        {{-- <h4 class="pt-2 mb-1">ERP INNOV! 👋</h4> --}}
+                        {{-- <p class="mb-4">Veuillez vous connecter à votre compte et commencer l'aventure</p> --}}
                         <x-validation-errors class="mb-2" />
                         @session('status')
                         <div class="mb-2 text-sm font-medium text-danger">
@@ -64,7 +64,7 @@
                             <div class="mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" name="remember" type="checkbox" id="remember" />
-                                    <label class="form-check-label" for="remember-me"> {{ __('Remember me') }} </label>
+                                    <label class="form-check-label" for="remember-me"> {{ __('Se souvenir de moi') }} </label>
                                 </div>
                             </div>
                             <div class="mb-3">

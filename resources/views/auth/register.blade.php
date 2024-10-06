@@ -25,12 +25,12 @@
                                         fill="#7367F0" />
                                 </svg>
                             </span> --}}
-                            <span class="app-brand-text demo text-body fw-bold ms-1">Gasikara Digital</span>
+                            <span class="app-brand-text demo text-body fw-bold ms-1">ERP INNOV</span>
                         </a>
                     </div>
                     <!-- /Logo -->
-                    <h4 class="mb-1 pt-2">ERP INNOV 🚀</h4>
-                    <p class="mb-4">S'inscrire</p>
+                    {{-- <h4 class="mb-1 pt-2">ERP INNOV 🚀</h4> --}}
+                    {{-- <p class="mb-4">S'inscrire</p> --}}
                     <x-validation-errors class="mb-4" />
                     <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('register') }}">
                         @csrf
@@ -72,11 +72,11 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="terms-conditions" required name="terms" />
                                 <label class="form-check-label" for="terms-conditions">
-                                    {!! __('I agree to the :terms_of_service and :privacy_policy', [
+                                    {!! __("J'accepte les conditions d'utilisation et la politique de confidentialité.", [
                                     'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'"
                                         class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Terms
                                         of Service').'</a>',
-                                    'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'"
+                                    'la politique de confidentialité' => '<a target="_blank" href="'.route('policy.show').'"
                                         class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Privacy
                                         Policy').'</a>',
                                     ]) !!}

@@ -24,11 +24,11 @@
                         <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">ERP Innov</span>
                     </a>
                     <p class="mb-4 footer-text footer-logo-description">
-                        Modèle de tableau de bord d’administration le plus convivial et hautement personnalisable pour
-                        les développeuses.
+                        ERP Innov : La Gestion Intelligente à Portée de Main </br>
+                        Simplifiez, Innovez, Prospérez
                     </p>
                     <form class="footer-form">
-                        <label for="footer-email" class="small">S’abonner à la newsletter</label>
+                        <label for="footer-email" class="small">Rester informé , Inscription à lettre d’information</label>
                         <div class="mt-1 d-flex">
                             <input type="email" class="form-control rounded-0 rounded-start-bottom rounded-start-top"
                                 id="footer-email" placeholder="" />

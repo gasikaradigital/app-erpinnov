@@ -36,6 +36,9 @@
                         <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#landingActu">Actu</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link fw-medium" href="#landingContact">Contact</a>
                     </li>
                 </ul>
