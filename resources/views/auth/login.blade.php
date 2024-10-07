@@ -46,7 +46,7 @@
                             <div class="mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" name="remember" type="checkbox" id="remember" />
-                                    <label class="form-check-label" for="remember-me"> {{ __('Souviens-toi de moi') }} </label>
+                                    <label class="form-check-label" for="remember-me"> {{ __('Se souvenir de moi') }} </label>
                                 </div>
                             </div>
                             <div class="mb-3">

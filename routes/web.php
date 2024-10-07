@@ -16,6 +16,14 @@ use App\Livewire\Client\PaymentProcess;
 use App\Livewire\Client\CreateInstances;
 use App\Livewire\Guard\CreateEntreprise;
 
+use App\Livewire\Admin\ManageAbonnement;
+use App\Livewire\Admin\DetailAbonnement;
+use App\Livewire\Admin\DetailFacture;
+// use App\Livewire\Client\InstanceListes;
+// use App\Livewire\Client\FactureClient;
+// use App\Livewire\Client\CreateInstances;
+
+
 Route::get('/', HomePage::class)->name('homepage');
 
 // roles redirect
@@ -51,6 +59,13 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
         Route::get('/roles', Roles::class)->name('roles.liste');
         Route::get('/permissions', Permissions::class)->name('permissions.liste');
+
+        Route::get('/gestion-abonnement', ManageAbonnement::class)->name('abonnement.gestion');
+        Route::get('/detail-abonnement', DetailAbonnement::class)->name('abonnement.detail');
+
+        Route::get('/detail-facture-client', DetailFacture::class)->name('facture.detail');
+
+
     });
 
 

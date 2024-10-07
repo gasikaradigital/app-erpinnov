@@ -27,7 +27,6 @@ class User extends Authenticatable implements MustVerifyEmail
     use Billable;
 
     protected $dates = ['deleted_at'];
-
     protected $fillable = [
         'name',
         'email',
