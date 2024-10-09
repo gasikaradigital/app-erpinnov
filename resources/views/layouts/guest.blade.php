@@ -33,7 +33,7 @@
         <!-- Template customizer & Theme config files -->
         <script src="{{ asset('assets/vendor/js/template-customizer.js') }}"></script>
         <script src="{{ asset('assets/js/config.js') }}"></script>
-        </head>
+    </head>
     <body>
 
     {{ $slot }}

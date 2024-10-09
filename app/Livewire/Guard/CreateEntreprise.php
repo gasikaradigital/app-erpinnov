@@ -55,6 +55,7 @@ class CreateEntreprise extends Component
 
             $this->reset(['name', 'nif', 'ville', 'pays', 'phone', 'adresse']);
             $this->alert('success', 'Entreprise ajoutée avec succès. Vous pouvez en ajouter une autre ou terminer.');
+            return redirect()->route('entreprise.create');
         } catch (\Exception $e) {
             $this->alert('error', 'Une erreur est survenue lors de l\'ajout de l\'entreprise: ' . $e->getMessage());
         }

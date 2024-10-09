@@ -23,4 +23,9 @@ class Entreprise extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function instances()
+    {
+        return $this->hasMany(Instance::class);
+    }
 }

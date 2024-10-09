@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('subscription_id')->constrained()->onDelete('cascade');
             $table->string('reference')->unique();
             $table->string('name')->unique();
-            $table->string('entreprise')->nullable();
+            $table->unsignedBigInteger('entreprise_id');
             $table->string('url')->unique();
             $table->enum('status', ['active', 'expired'])->default('active');
             $table->string('auth_token', 64)->nullable();
@@ -27,6 +27,7 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
 
+            $table->foreign('entreprise_id')->references('id')->on('entreprises')->onDelete('cascade');
             // Index pour améliorer les performances des requêtes fréquentes
             $table->index('status');
         });

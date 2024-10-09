@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\Plan;
 use Livewire\Component;
 use App\Models\Instance;
+use App\Models\Entreprise;
 use Illuminate\Support\Str;
 use Livewire\Attributes\On;
 use App\Models\Subscription;
@@ -25,12 +26,20 @@ class CreateInstances extends Component
 
     public $newInstanceInfo = null;
     public $name = '';
-    public $entreprise;
+    public $entreprises;
+    public $entreprise_id;
     public $showPlanSelection = false;
+
+    public function loadEnterprises()
+    {
+        $this->entreprises = Auth::user()->entreprises;
+    }
+
 
     public function mount()
     {
         $this->checkInstanceCreationEligibility();
+        $this->loadEnterprises();
     }
 
     public function checkInstanceCreationEligibility()
@@ -53,7 +62,7 @@ class CreateInstances extends Component
     {
         return [
             'name' => ['required', 'unique:instances,name', 'min:3', 'max:15'],
-            'entreprise' => 'required',
+            'entreprise_id' => 'required|exists:entreprises,id',
         ];
     }
 
@@ -62,8 +71,10 @@ class CreateInstances extends Component
         'name.unique' => 'Ce nom d\'instance est déjà utilisé.',
         'name.min' => 'Le nom de l\'instance doit contenir au moins 3 caractères.',
         'name.max' => 'Le nom de l\'instance ne peut pas dépasser 15 caractères.',
-        'entreprise.required' => 'Choix de l\'entreprise est obligatoire.',
+        'entreprise_id.required' => 'Le choix de l\'entreprise est obligatoire.',
+        'entreprise_id.exists' => 'L\'entreprise sélectionnée n\'existe pas.',
     ];
+
 
     public function store()
     {
@@ -111,12 +122,14 @@ class CreateInstances extends Component
                 ]);
             }
 
+            $entreprise = Entreprise::findOrFail($this->entreprise_id);
+
             $instance = Instance::create([
                 'user_id' => $user->id,
                 'subscription_id' => $activeSubscription->id,
                 'reference' => $reference,
                 'name' => $this->name,
-                'entreprise' => $this->entreprise,
+                'entreprise' => $entreprise->name,
                 'url' => $instanceDetails['url'],
                 'status' => Instance::STATUS_ACTIVE,
                 'auth_token' => Instance::generateUniqueAuthToken(),
