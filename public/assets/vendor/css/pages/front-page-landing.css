@@ -272,3 +272,21 @@
   inset-inline-start: -3.125rem;
   transform: rotate(90deg);
 }
+
+.hero-image {
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+/* Ajouter un style pour le conteneur pour aligner l'image correctement */
+#landingHero {
+    position: relative;
+    overflow: hidden; /* Pour éviter les débordements */
+}
+

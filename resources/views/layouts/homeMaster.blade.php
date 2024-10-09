@@ -34,6 +34,20 @@ data-theme="theme-default" data-assets-path="assets/" data-template="vertical-me
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/template-customizer.js') }}"></script>
+    <style>
+        .custom-button {
+            background-color: white; /* Couleur de fond blanche */
+            color: #007bff; /* Couleur du texte (par exemple, bleu) */
+            border: 2px solid #007bff; /* Bordure bleu */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce */
+            
+        }
+
+        .custom-button:hover {
+            background-color: #007bff; /* Couleur de fond au survol */
+            color: white; /* Couleur du texte au survol */
+        }
+    </style>
 </head>
 <body>
     <script src="{{ asset('assets/vendor/js/dropdown-hover.js') }}"></script>

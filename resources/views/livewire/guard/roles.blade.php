@@ -18,7 +18,7 @@ $displayRoles = ['superadmin', 'manager'];
                 <div class="role-heading">
                     <h5 class="mb-1">{{ $role->label }}</h5>
                     <a href="javascript:;" wire:click.prevent="edit({{ $role->id }})" data-bs-toggle="modal"
-                        data-bs-target="#addRoleModal" class="role-edit-modal"><span>Gérer le rôle</span></a>
+                        data-bs-target="#addRoleModal" class="role-edit-modal"><span>G锟斤拷rer le r锟�0锟�0le</span></a>
                 </div>
                 @if($role->name !== 'superadmin')
                 <a href="javascript:void(0);" wire:click="delete({{ $role->id }})">

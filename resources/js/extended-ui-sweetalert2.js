@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> henintsoa
 /**
  * Sweet Alerts
  */
@@ -527,10 +523,10 @@
     confirmColor.onclick = function () {
       Swal.fire({
         title: 'Êtes-vous sûr ?',
-        text: "Vous ne pourrez pas revenir en arrière !",
+        text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Oui, confirmer!',
+        confirmButtonText: 'Yes, delete it!',
         customClass: {
           confirmButton: 'btn btn-primary me-3',
           cancelButton: 'btn btn-label-secondary'
@@ -540,16 +536,16 @@
         if (result.value) {
           Swal.fire({
             icon: 'success',
-            title: 'Success',
-            text: 'TransActivé/Désactivé avec succès',
+            title: 'Deleted!',
+            text: 'Your file has been deleted.',
             customClass: {
               confirmButton: 'btn btn-success'
             }
           });
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           Swal.fire({
-            title: 'Annuler',
-            text: 'Annulation Activé/Désactivé avec succès',
+            title: 'Cancelled',
+            text: 'Your imaginary file is safe :)',
             icon: 'error',
             customClass: {
               confirmButton: 'btn btn-success'

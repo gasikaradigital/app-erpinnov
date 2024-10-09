@@ -12,25 +12,25 @@ use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class InstanceListes extends Component
-{   
+{
     use WithPagination, LivewireAlert, AuthorizesRequests;
-    
+
     protected $paginationTheme = 'bootstrap';
     public $page = 4;
     public $isLoading = true;
-   
+
     public $instanceId;
     public $name, $reference, $created_at, $expiration_date, $status, $planType, $dolibarr_username, $url, $modules;
-    
-    
+
+
     public function viewDetail($instanceId)
-    {   
+    {
         $this->isLoading = true;
-        
+
         $this->instanceId = $instanceId;
-        
+
         $detail = Instance::with('subscription.plan')->findOrFail($instanceId);
-        
+
         $this->name = $detail->name;
         $this->reference = $detail->reference;
         $this->created_at = $detail->created_at->format('d/m/Y H:i');
@@ -43,7 +43,7 @@ class InstanceListes extends Component
 
         $this->isLoading = false;
     }
-    
+
 
     public function delete($instanceId)
     {
@@ -78,7 +78,7 @@ class InstanceListes extends Component
     }
 
     public function render()
-    {   
+    {
         $user = Auth::user();
         return view('livewire.client.instance-listes', [
             'instances' => Instance::where('user_id', $user->id)
