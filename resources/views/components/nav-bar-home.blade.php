@@ -26,7 +26,7 @@
                 </button>
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" aria-current="page" href="#landingHero ">Acceuil</a>
+                        <a class="nav-link fw-medium" aria-current="page" href="{{ route('homepage') }}#landingHero">Accueil</a>
                     </li>
 
                     <li class="nav-item">

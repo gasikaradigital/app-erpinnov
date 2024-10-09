@@ -15,16 +15,19 @@ use App\Livewire\Client\InstanceListes;
 use App\Livewire\Client\PaymentProcess;
 use App\Livewire\Client\CreateInstances;
 use App\Livewire\Guard\CreateEntreprise;
-
 use App\Livewire\Admin\ManageAbonnement;
 use App\Livewire\Admin\DetailAbonnement;
 use App\Livewire\Admin\DetailFacture;
+use App\Livewire\DetailArticle;
+use App\Livewire\TousFaq;
 // use App\Livewire\Client\InstanceListes;
 // use App\Livewire\Client\FactureClient;
 // use App\Livewire\Client\CreateInstances;
 
 
 Route::get('/', HomePage::class)->name('homepage');
+Route::get('/detailArticle', DetailArticle::class)->name('detailarticle');
+Route::get('/tousfaq', TousFaq::class)->name('tousFaq');
 
 // roles redirect
 Route::get('/redirect', function () {

@@ -910,7 +910,7 @@
                     <span class="tf-icons ti ti-user scaleX-n1-rtl me-md-1"></span>
                     <span class="d-none d-md-block">voir toutes les faqs</span>
                 </a> --}}
-                <a href="#" class="btn rounded-pill btn-danger btn-lg custom-button"  style="margin-left: 40%">voir tous les faq</a>
+                <a href="{{ route('tousFaq') }}" class="btn rounded-pill btn-danger btn-lg custom-button"  style="margin-left: 40%">Toutes les questions</a>
             </div>
         </section>
     <!-- FAQ: End -->
@@ -947,7 +947,7 @@
 
                           <h5 class="my-2">ERP INNOV V1</h5>
                           <p>Tous les modules fournis avec l'ERP INNOV sont disponibles.</p>
-                          <a class="btn btn-sm btn-label-primary" href="help-center-article.html">En savoir plus</a>
+                          <a class="btn btn-sm btn-label-primary" href="{{ route('detailarticle') }}">En savoir plus</a>
                         </div>
                       </div>
                     </div>
