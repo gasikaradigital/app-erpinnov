@@ -34,13 +34,14 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label fw-bold">Votre entreprise</label>
-                                    <select wire:model="entreprise"
-                                        class="form-control form-control-lg @error('entreprise') is-invalid @enderror">
-                                        <option value="">-- Chosir votre entreprise --</option>
-                                        <option value="Entreprise_1">Entreprise_1</option>
-                                        <option value="Entreprise_2">Entreprise_2</option>
+                                    <select wire:model="entreprise_id"
+                                        class="form-control form-control-lg @error('entreprise_id') is-invalid @enderror">
+                                        <option value="">-- Choisir votre entreprise --</option>
+                                        @foreach($entreprises as $entreprise)
+                                            <option value="{{ $entreprise->id }}">{{ $entreprise->name }}</option>
+                                        @endforeach
                                     </select>
-                                    @error('entreprise') <span class="invalid-feedback">{{ $message }}</span> @enderror
+                                    @error('entreprise_id') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
                                 <div class="mt-3 col-12 d-flex justify-content-center">
                                     <button type="submit" class="btn btn-primary btn-next">
