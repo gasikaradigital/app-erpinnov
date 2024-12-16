@@ -1,0 +1,94 @@
+<?php
+
+use App\Livewire\HomePage;
+use App\Livewire\Admin\Users;
+use App\Livewire\Guard\Roles;
+use App\Livewire\Admin\DetailUser;
+use App\Livewire\Client\HomeClient;
+use App\Livewire\Guard\Permissions;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Livewire\Admin\HomeSuperAdmin;
+use App\Livewire\Admin\ManageInstance;
+use App\Livewire\Client\FactureClient;
+use App\Livewire\Client\InstanceListes;
+use App\Livewire\Client\PaymentProcess;
+use App\Livewire\Client\CreateInstances;
+use App\Livewire\Guard\CreateEntreprise;
+use App\Livewire\Admin\ManageAbonnement;
+use App\Livewire\Admin\DetailAbonnement;
+use App\Livewire\Admin\DetailFacture;
+use App\Livewire\DetailArticle;
+use App\Livewire\TousFaq;
+use App\Livewire\Client\Profile;
+
+
+Route::get('/', HomePage::class)->name('homepage');
+Route::get('/detailArticle', DetailArticle::class)->name('detailarticle');
+Route::get('/tousfaq', TousFaq::class)->name('tousFaq');
+
+// roles redirect
+Route::get('/redirect', function () {
+    $user = Auth::user();
+
+    if ($user->hasRole('superadmin')) {
+        return redirect()->route('superAdmin');
+    }
+
+    if ($user->hasRole('manager')) {
+        return redirect()->route('superAdmin');
+    }
+
+    if ($user->hasRole('client')) {
+        return redirect()->route('espaceClient');
+    }
+
+    return redirect()->route('404');
+
+})->middleware(['auth', 'verified']);
+
+// routes listes
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
+
+    // Route for SuperAdmin
+    Route::middleware(['role:superadmin|manager'])->prefix('fulladmin')->group(function () {
+
+        Route::get('/', HomeSuperAdmin::class)->name('superAdmin');
+        Route::get('/users-liste', Users::class)->name('users.liste');
+        Route::get('/detail-user/{id}', DetailUser::class)->name('users.detail');
+
+        Route::get('/gestion-instance', ManageInstance::class)->name('instance.gestion');
+        Route::get('/roles', Roles::class)->name('roles.liste');
+        Route::get('/permissions', Permissions::class)->name('permissions.liste');
+
+        Route::get('/gestion-abonnement', ManageAbonnement::class)->name('abonnement.gestion');
+         Route::get('/detail-abonnement/id_instance={id_instance}/id_user{id_user}', DetailAbonnement::class)->name('abonnement.detail');
+        
+        Route::get('/detail-facture-client/id_payment={id_payment}/id_instance={id_instance}', DetailFacture::class)->name('facture.detail');
+
+
+
+    });
+
+
+    // Route for Client
+    Route::middleware(['role:client', 'has.entreprise'])->prefix('client-espace')->group(function () {
+
+        Route::get('/client', HomeClient::class)->name('espaceClient');
+
+        Route::get('/facturation', FactureClient::class)->name('client.facture');
+
+        Route::get('/instance/create', CreateInstances::class)->name('instance.create');
+        Route::get('/instances', InstanceListes::class)->name('instances.list');
+
+        Route::get('/payment/process/{uuid}', PaymentProcess::class)->name('payment.process');
+        
+         Route::get('/profile', Profile::class)->name('client.profile');
+
+    });
+
+
+    Route::get('/entreprise/create', CreateEntreprise::class)->name('entreprise.create');
+
+});
+
