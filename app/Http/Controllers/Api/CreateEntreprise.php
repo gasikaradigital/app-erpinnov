@@ -8,7 +8,15 @@ use App\Models\Entreprise;
 
 class CreateEntreprise extends Controller
 {
-    public function entreprise(Request $request){
+    /**
+     * Create a new entreprise.
+     *
+     * @param Request $request
+     * @return JsonResponse
+     */
+
+    public function entreprise(Request $request): JsonResponse
+    {
 
         // Vérifie si l'utilisateur est connecté
         if (!auth()->check()) {

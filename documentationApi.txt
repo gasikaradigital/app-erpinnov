@@ -1,0 +1,117 @@
+# API authentification
+
+    ## Authentification des utilisateurs
+
+    **Méthode** : `GET`  
+    **URL** : `/api/login`      
+    **Authentification requise** : Oui (Sanctum/Bearer Token)
+
+    **Description** : Cette méthode permet de faire l'autentification des utilisateur.
+
+    **Donnée attendue** : email et mot de passe de format json
+
+    **Exemple**: 
+    {
+        'email': 'test@example.com',
+        'password': 'password123'
+    }
+
+    ### Réponse: renvoie les informations de l'utilisateur avec l'auth-token
+    ```json
+    {
+    'user' => $user,
+    'token' => $user->createToken('auth-token')->plainTextToken
+    }
+
+# API register
+    ## Enregistrement des utilisateurs
+
+    **Méthode** : 'POST'
+    **URL** : '/api/register'
+
+    **Description** : Cette méthode permet de faire l'enregistrement des nouvelles utilisateurs
+
+    **Donnée attendue** : name, email et mot de passe de format json
+    
+    **Exemple** :
+    {
+        'name': 'John Doe',
+        'email': 'john@example.com',
+        'password': 'password123',
+        'password_confirmation': 'password123'
+    }
+
+    ### Réponse: renvoie les informations de l'utilisateur avec l'auth-token qui viens d'être créer
+    ```json
+    {
+        'user' => $user,
+        'token' => $user->createToken('auth-token')->plainTextToken
+    }
+
+#API logout
+    ##Déconnexion des utilisateurs
+
+    **Méthode** : 'POST'
+    **URL** : /api/logout'
+
+    **Description** : Permet de supprimer l'auth token courent de l'utilisateur connecté qui veux se deconnecter
+
+    ### Réponse: renvoie le message que l'utilisateur est bien déconnecté
+    ```json
+    {
+       'message' => 'Déconnecté avec succès'
+    }
+
+#API user
+    ##Informations des utilisateurs
+
+    **Méthode** : 'GET'
+    **URL** : '/api/user'
+
+    **Description** : Permet de récupérer les informations liés à l'utilisateur
+    
+    ### Réponse: renvoie toute les informations de l'utilisateur connecté
+
+    ```json
+    {
+       'user' => $user
+    }
+
+#API entreprise
+    ##Création des entreprise
+
+    **Méthode** : 'POST'
+    **URL** : '/api/entreprise'
+
+    **Description** : Permet de créer une nouvelle entreprise pour l'utilisateur connécté
+
+    **Donnée attendue** : les informations liés à l'entreprise, comme son nom et d'autre
+    **Exemple** :
+    {
+        'name': 'John Doe',
+        'nif': 'john@example.com',
+        'ville': 'password123',
+        'pays': 'password123',
+        'phone' : '0327422318',
+        'adresse' : 'mahajanga'
+    }
+
+    ### Réponse: renvoie les informations de l'entreprise qui viens d'être créer
+    ```json
+    {
+        'entreprise' => $entreprise,
+    }
+
+#API plan
+    ## Les plans disponnibles
+
+    **Méthode** : 'GET'
+    **URL**: '/api/plan'
+
+    **Description** : Cette méthode permet de récupérer toutes les plans disponnibles
+
+    ### Réponse: renvoie les informations des plans disponnibles
+    ```json
+    {
+        'user' => $plan,
+    }

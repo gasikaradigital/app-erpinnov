@@ -25,16 +25,7 @@ class CreateInstance extends Controller
             'entreprise' => 'required|string',
         ]);
 
-        //Création d'une nouvelle entreprise
-        $entreprise = Entreprise::create([
-            'user_id' => $request->user()->id,
-            'name' => $request->name,
-            'nif' => $request->nif,
-            'ville' => $request->ville,
-            'pays' => $request->pays,
-            'phone' => $request->phone,
-            'adresse' => $request->adresse
-        ]);
+        
 
         //Retourner une réponse JSON avec l’entreprise créée
         return response()->json([
